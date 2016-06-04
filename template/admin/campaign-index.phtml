@@ -54,6 +54,9 @@
                     <a class="btn btn-primary btn-xs" title="<?php _e('Edit'); ?>"
                        href="<?php echo $this->url('', array('action' => 'update', 'id' => $campaign['id'])); ?>"><i
                             class="fa fa-edit"></i> <?php _e('Edit'); ?></a>
+                    <a class="btn btn-success btn-xs" target="_blank" title="<?php _e('View'); ?>"
+                       href="<?php echo $this->escape($campaign['url']); ?>"><i
+                            class="fa fa-eye"></i> <?php _e('View'); ?></a>
                 </td>
             </tr>
         <?php } ?>

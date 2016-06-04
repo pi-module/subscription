@@ -1,7 +1,17 @@
-<?php
-/**
- * Created by PhpStorm.
- * User: voltan
- * Date: 6/4/16
- * Time: 4:35 PM
- */
+<?php $this->css($this->assetModule('css/front.css')); ?>
+<div class="clearfix">
+    <div class="page-header">
+        <h1><?php echo $this->escape($campaign['title']); ?></h1>
+    </div>
+    <?php if (!empty($campaign['text_description'])) { ?>
+    <div class="clearfix">
+        <?php echo $campaign['text_description']; ?>
+    </div>
+    <?php } ?>
+    <?php if (isset($form)) {
+        echo $this->form($form);
+    } ?>
+</div>
+
+
+<pre><?php print_r($campaign); ?></pre>

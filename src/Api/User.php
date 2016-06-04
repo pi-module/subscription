@@ -10,11 +10,10 @@
 /**
  * @author Hossein Azizabadi <azizabadi@faragostaresh.com>
  */
-namespace Module\Subscriptionr\Api;
+namespace Module\Subscription\Api;
 
 use Pi;
 use Pi\Application\Api\AbstractApi;
-use Zend\Json\Json;
 
 /*
  * Pi::api('user', 'subscription')->getUserInformation($uid);

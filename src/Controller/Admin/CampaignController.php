@@ -39,7 +39,8 @@ class CampaignController extends ActionController
             $list[$row->id] = $row->toArray();
             $list[$row->id]['url'] = Pi::url($this->url('default', array(
                 'module' => $module,
-                'controller' => 'campaign',
+                'controller' => 'index',
+                'action' => 'index',
                 'slug' => $row->slug,
             )));
             $list[$row->id]['time'] = sprintf(__('From %s to %s'),

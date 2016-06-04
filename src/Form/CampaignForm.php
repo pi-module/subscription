@@ -264,7 +264,7 @@ class CampaignForm extends BaseForm
             'name' => 'submit',
             'type' => 'submit',
             'attributes' => array(
-                'value' => __('Search'),
+                'value' => __('Submit'),
             )
         ));
     }

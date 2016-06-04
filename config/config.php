@@ -18,8 +18,8 @@ return array(
             'name' => 'admin'
         ),
         array(
-            'title' => _a('View'),
-            'name' => 'view'
+            'title' => _a('Default campaign'),
+            'name' => 'campaign'
         ),
         array(
             'title' => _a('Image'),
@@ -29,6 +29,7 @@ return array(
             'title' => _a('Notification'),
             'name' => 'notification'
         ),
+
     ),
     'item' => array(
         // Admin
@@ -39,6 +40,64 @@ return array(
             'edit' => 'text',
             'filter' => 'number_int',
             'value' => 25
+        ),
+        // Text
+        'default_title' => array(
+            'category' => 'campaign',
+            'title' => _a('Default title'),
+            'description' => '',
+            'edit' => 'text',
+            'filter' => 'string',
+            'value' => _a('Subscription'),
+        ),
+        'default_description' => array(
+            'category' => 'campaign',
+            'title' => _a('Default description text'),
+            'description' => '',
+            'edit' => 'textarea',
+            'filter' => 'string',
+            'value' => ''
+        ),
+        'default_subscription' => array(
+            'category' => 'campaign',
+            'title' => _a('Default subscription text'),
+            'description' => '',
+            'edit' => 'textarea',
+            'filter' => 'string',
+            'value' => ''
+        ),
+        'default_email' => array(
+            'category' => 'campaign',
+            'title' => _a('Default email text'),
+            'description' => '',
+            'edit' => 'textarea',
+            'filter' => 'string',
+            'value' => ''
+        ),
+        'default_sms' => array(
+            'category' => 'campaign',
+            'title' => _a('Default sms text'),
+            'description' => '',
+            'edit' => 'textarea',
+            'filter' => 'string',
+            'value' => ''
+        ),
+        'default_subscription_type' => array(
+            'title' => _a('Default subscription type'),
+            'description' => '',
+            'edit' => array(
+                'type' => 'select',
+                'options' => array(
+                    'options' => array(
+                        'email' => __('Email'),
+                        'sms' => __('Sms'),
+                        'both' => __('Both'),
+                    ),
+                ),
+            ),
+            'filter' => 'text',
+            'value' => 'email',
+            'category' => 'campaign',
         ),
         // Image
         'image_size' => array(
