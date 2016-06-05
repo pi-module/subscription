@@ -32,6 +32,10 @@ class PeopleController extends ActionController
         // Make list
         foreach ($rowset as $row) {
             $list[$row->id] = $row->toArray();
+            $list[$row->id]['isUser'] = ($row->uid > 0) ? 1 : 0;
+            if ($row->uid > 0) {
+                $list[$row->id]['user'] = Pi::api('user', 'subscription')->getUserInformation($row->uid);
+            }
         }
         // Set paginator
         $count = array('count' => new \Zend\Db\Sql\Predicate\Expression('count(*)'));

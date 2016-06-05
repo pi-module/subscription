@@ -45,6 +45,7 @@ class IndexController extends ActionController
             }
         } else {
             $campaign = array();
+            $campaign['id'] = 0;
             $campaign['title'] = $config['default_title'];
             $campaign['text_description'] = $config['default_description'];
             $campaign['text_subscription'] = $config['default_subscription'];
@@ -72,7 +73,32 @@ class IndexController extends ActionController
             $form->setInputFilter(new SubscriptionFilter($option));
             $form->setData($data);
             if ($form->isValid()) {
+                // Set values
                 $values = $form->getData();
+                $values['campaign'] = $campaign['id'];
+                $values['uid'] = $uid;
+                $values['status'] = 1;
+                $values['time_join'] = time();
+                $values['newsletter'] = 1;
+                // Save
+                $people = $this->getModel('people')->createRow();
+                $people->assign($values);
+                $people->save();
+                $people = $people->toArray();
+                // Send notification
+                Pi::api('notification', 'subscription')->joinUser($people, $campaign);
+                // Set ID
+                $subscriptionId = uniqid('subscription');
+                // Set session
+                $_SESSION[$subscriptionId] = array(
+                    'campaign' => $campaign['id'],
+                    'people' => $people['id'],
+                );
+                // Jump
+                $this->jump(array(
+                    'action' => 'finish',
+                    'id' => $subscriptionId,
+                ), __('Your subscription data saved successfully.'));
             }
         } else {
             $subscription = array();
@@ -95,5 +121,44 @@ class IndexController extends ActionController
         $this->view()->assign('config', $config);
         $this->view()->assign('campaign', $campaign);
         $this->view()->assign('form', $form);
+    }
+
+    public function finishAction()
+    {
+        // Get info from url
+        $module = $this->params('module');
+        $id = $this->params('id');
+        // Get config
+        $config = Pi::service('registry')->config->read($module);
+        // Check id
+        if (isset($_SESSION[$id]) && !empty($_SESSION[$id])) {
+            $information = $_SESSION[$id];
+            unset($_SESSION[$id]);
+        } else {
+            $this->getResponse()->setStatusCode(403);
+            $this->terminate(__('Nothing Set'), '', 'error');
+            $this->view()->setLayout('layout-simple');
+            return;
+        }
+        // Find campin and people
+        $people = $this->getModel('people')->find($information['people']);
+        if ($information['campaign'] > 0) {
+            $campaign = $this->getModel('campaign')->find($information['campaign']);
+            $campaign = $campaign->toArray();
+        } else {
+            $campaign = array();
+            $campaign['id'] = 0;
+            $campaign['title'] = $config['default_title'];
+            $campaign['text_description'] = $config['default_description'];
+            $campaign['text_subscription'] = $config['default_subscription'];
+            $campaign['text_email'] = $config['default_email'];
+            $campaign['text_sms'] = $config['default_sms'];
+            $campaign['subscription_type'] = $config['default_subscription_type'];
+        }
+        // Set view
+        $this->view()->setTemplate('finish');
+        $this->view()->assign('config', $config);
+        $this->view()->assign('people', $people);
+        $this->view()->assign('campaign', $campaign);
     }
 }

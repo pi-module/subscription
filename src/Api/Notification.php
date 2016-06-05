@@ -16,12 +16,12 @@ use Pi;
 use Pi\Application\Api\AbstractApi;
 
 /*
- * Pi::api('notification', 'subscription')->joinUser($user, $campaign);
+ * Pi::api('notification', 'subscription')->joinUser($people, $campaign);
  */
 
 class Notification extends AbstractApi
 {
-    public function joinUser($user, $campaign)
+    public function joinUser($people, $campaign)
     {
         // Check notification module
         if (!Pi::service('module')->isActive('notification')) {
@@ -40,15 +40,15 @@ class Notification extends AbstractApi
         $module = Pi::service('module')->current();
         
         // Set uid
-        $uid = ($user['uid'] > 0) ? $user['uid'] : '';
+        $uid = ($people['uid'] > 0) ? $people['uid'] : '';
 
         // Set mail information
         $information = array(
-            'first_name' => $user['first_name'],
-            'last_name' => $user['last_name'],
+            'first_name' => $people['first_name'],
+            'last_name' => $people['last_name'],
             'title' => $campaign['title'],
             'extra' => $campaign['text_main'],
-            'time' => _date($user['time_join']),
+            'time' => _date($people['time_join']),
         );
 
         // Send mail to admin
@@ -69,17 +69,17 @@ class Notification extends AbstractApi
             $content = sprintf(
                 $config['sms_subscription_admin'],
                 $siteName,
-                $user['first_name'],
-                $user['last_name'],
+                $people['first_name'],
+                $people['last_name'],
                 $campaign['title']
             );
             Pi::api('sms', 'notification')->sendToAdmin($content);
         }
 
         // Send mail to user
-        if (isset($user['email']) && !empty($user['email'])) {
+        if (isset($people['email']) && !empty($people['email'])) {
             $toUser = array(
-                $user['email'] => sprintf('%s %s', $user['first_name'], $user['last_name']),
+                $people['email'] => sprintf('%s %s', $people['first_name'], $people['last_name']),
             );
             Pi::api('mail', 'notification')->send(
                 $toUser,
@@ -91,14 +91,14 @@ class Notification extends AbstractApi
         }
 
         // Send sms to user
-        if (isset($user['mobile']) && !empty($user['mobile'])) {
+        if (isset($people['mobile']) && !empty($people['mobile'])) {
             $content = sprintf(
                 $config['sms_subscription_user'],
-                $user['first_name'],
-                $user['last_name'],
+                $people['first_name'],
+                $people['last_name'],
                 $campaign['text_sms']
             );
-            Pi::api('sms', 'notification')->send($content, $user['mobile']);
+            Pi::api('sms', 'notification')->send($content, $people['mobile']);
         }
     }
 }
