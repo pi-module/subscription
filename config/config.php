@@ -234,10 +234,10 @@ return array(
         'sms_subscription_admin' => array(
             'category' => 'notification',
             'title' => _a('Sms subscription to admin'),
-            'description' => _a('Dear %s admin, %s %s joined to % campaign'),
+            'description' => _a('Dear %s admin, %s %s joined to %s campaign'),
             'edit' => 'text',
             'filter' => 'string',
-            'value' => _a('Dear %s admin, %s %s joined to % campaign'),
+            'value' => _a('Dear %s admin, %s %s joined to %s campaign'),
         ),
         'sms_subscription_user' => array(
             'category' => 'notification',

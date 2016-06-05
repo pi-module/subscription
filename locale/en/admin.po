@@ -1,0 +1,600 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: shop\n"
+"POT-Creation-Date: 2016-01-29 11:05+0330\n"
+"PO-Revision-Date: \n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: en\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 1.8.5\n"
+"X-Poedit-SourceCharset: UTF-8\n"
+"X-Poedit-KeywordsList: _a;_t\n"
+"X-Poedit-Basepath: ../..\n"
+"X-Poedit-SearchPath-0: .\n"
+
+#: config/block.php:16
+msgid "New Product"
+msgstr ""
+
+#: config/block.php:17
+msgid "New Product list"
+msgstr ""
+
+#: config/block.php:22 config/block.php:92 config/block.php:289
+#: config/block.php:295 config/navigation.php:48 config/page.php:22
+#: config/page.php:81 config/permission.php:38
+msgid "Category"
+msgstr ""
+
+#: config/block.php:29 config/block.php:99 config/block.php:169
+#: config/block.php:232
+msgid "Number"
+msgstr ""
+
+#: config/block.php:36 config/block.php:106 config/block.php:176
+#: config/block.php:239
+msgid "Product list type"
+msgstr ""
+
+#: config/block.php:42 config/block.php:112 config/block.php:182
+#: config/block.php:245 config/block.php:308
+msgid "Horizontal"
+msgstr ""
+
+#: config/block.php:43 config/block.php:113 config/block.php:183
+#: config/block.php:246 config/block.php:309
+msgid "Vertical"
+msgstr ""
+
+#: config/block.php:44 config/block.php:114 config/block.php:184
+#: config/block.php:247
+msgid "Multi size Box"
+msgstr ""
+
+#: config/block.php:45 config/block.php:115 config/block.php:185
+#: config/block.php:248 config/block.php:310
+msgid "List"
+msgstr ""
+
+#: config/block.php:46 config/block.php:116 config/block.php:186
+#: config/block.php:249 config/block.php:311
+msgid "Slide"
+msgstr ""
+
+#: config/block.php:47 config/block.php:117 config/block.php:187
+#: config/block.php:250 config/block.php:312
+msgid "Slide by hover effect"
+msgstr ""
+
+#: config/block.php:55 config/block.php:125 config/block.php:195
+#: config/block.php:258
+msgid "Show price"
+msgstr ""
+
+#: config/block.php:62 config/block.php:132 config/block.php:202
+#: config/block.php:265 config/block.php:320 config/block.php:360
+msgid "Use block effects"
+msgstr ""
+
+#: config/block.php:63 config/block.php:133 config/block.php:203
+#: config/block.php:266 config/block.php:321 config/block.php:361
+msgid "Use block effects or set custom effect on theme"
+msgstr ""
+
+#: config/block.php:69 config/block.php:139 config/block.php:209
+#: config/block.php:272
+msgid "Show More link to module page"
+msgstr ""
+
+#: config/block.php:76 config/block.php:146 config/block.php:216
+#: config/block.php:279
+msgid "Set More link to module page"
+msgstr ""
+
+#: config/block.php:86
+msgid "Random Product"
+msgstr ""
+
+#: config/block.php:87
+msgid "Random Product list"
+msgstr ""
+
+#: config/block.php:156
+msgid "Tag Product"
+msgstr ""
+
+#: config/block.php:157
+msgid "Products from selected tag"
+msgstr ""
+
+#: config/block.php:162
+msgid "Tag term"
+msgstr ""
+
+#: config/block.php:226
+msgid "Special Product"
+msgstr ""
+
+#: config/block.php:227
+msgid "Special Product list"
+msgstr ""
+
+#: config/block.php:290 config/navigation.php:16 config/page.php:106
+msgid "Category list"
+msgstr ""
+
+#: config/block.php:302
+msgid "Category list type"
+msgstr ""
+
+#: config/block.php:330
+msgid "Basket"
+msgstr ""
+
+#: config/block.php:331
+msgid "basket"
+msgstr ""
+
+#: config/block.php:336
+msgid "Basket type"
+msgstr ""
+
+#: config/block.php:342
+msgid "Link to basket"
+msgstr ""
+
+#: config/block.php:343
+msgid "Dialog box"
+msgstr ""
+
+#: config/block.php:354 config/config.php:49 config/config.php:549
+msgid "Search"
+msgstr ""
+
+#: config/block.php:355
+msgid "Ajax search block"
+msgstr ""
+
+#: config/comment.php:15
+msgid "Shop comments"
+msgstr ""
+
+#: config/config.php:17
+msgid "Admin"
+msgstr ""
+
+#: config/config.php:21 config/page.php:120
+msgid "Json output"
+msgstr ""
+
+#: config/config.php:25
+msgid "View"
+msgstr ""
+
+#: config/config.php:29
+msgid "Image"
+msgstr ""
+
+#: config/config.php:33
+msgid "Social"
+msgstr ""
+
+#: config/config.php:37
+msgid "File"
+msgstr ""
+
+#: config/config.php:41
+msgid "Vote"
+msgstr ""
+
+#: config/config.php:45
+msgid "Favourite"
+msgstr ""
+
+#: config/config.php:53
+msgid "Order"
+msgstr ""
+
+#: config/config.php:61 config/config.php:125
+msgid "Perpage"
+msgstr ""
+
+#: config/config.php:70
+msgid "Perpage on json output"
+msgstr ""
+
+#: config/config.php:78
+msgid "Check password for json output"
+msgstr ""
+
+#: config/config.php:86
+msgid "Password for json output"
+msgstr ""
+
+#: config/config.php:87
+msgid "After use on mobile device , do not change it"
+msgstr ""
+
+#: config/config.php:94
+msgid "Homepage type"
+msgstr ""
+
+#: config/config.php:100
+msgid "List of all products"
+msgstr ""
+
+#: config/config.php:101
+msgid "List of brands and widgets"
+msgstr ""
+
+#: config/config.php:111
+msgid "Homepage widget"
+msgstr ""
+
+#: config/config.php:112
+msgid "Put widget name here, Use `|` as delimiter to separate widgets"
+msgstr ""
+
+#: config/config.php:118
+msgid "Homepage title"
+msgstr ""
+
+#: config/config.php:132
+msgid "Columns"
+msgstr ""
+
+#: config/config.php:138
+msgid "One columns"
+msgstr ""
+
+#: config/config.php:139
+msgid "Two columns"
+msgstr ""
+
+#: config/config.php:140
+msgid "Three columns"
+msgstr ""
+
+#: config/config.php:141
+msgid "Four columns"
+msgstr ""
+
+#: config/config.php:142
+msgid "Six columns"
+msgstr ""
+
+#: config/config.php:152
+msgid "Show related products"
+msgstr ""
+
+#: config/config.php:160
+msgid "Show attribute fields"
+msgstr ""
+
+#: config/config.php:168
+msgid "Show product attached files"
+msgstr ""
+
+#: config/config.php:176
+msgid "Show other products from this category"
+msgstr ""
+
+#: config/config.php:184
+msgid "Show product price"
+msgstr ""
+
+#: config/config.php:192
+msgid "Show special"
+msgstr ""
+
+#: config/config.php:200
+msgid "Number of products on special"
+msgstr ""
+
+#: config/config.php:208
+msgid "Price title"
+msgstr ""
+
+#: config/config.php:212
+msgid "Volume"
+msgstr ""
+
+#: config/config.php:216
+msgid "Show Tags"
+msgstr ""
+
+#: config/config.php:224
+msgid "Show breadcrumbs"
+msgstr ""
+
+#: config/config.php:232
+msgid "Show category list"
+msgstr ""
+
+#: config/config.php:240
+msgid "Show fast question form"
+msgstr ""
+
+#: config/config.php:247
+msgid "Side category type"
+msgstr ""
+
+#: config/config.php:253
+msgid "Compact"
+msgstr ""
+
+#: config/config.php:254
+msgid "Full"
+msgstr ""
+
+#: config/config.php:265
+msgid "Image Size"
+msgstr ""
+
+#: config/config.php:273
+msgid "Image quality"
+msgstr ""
+
+#: config/config.php:274
+msgid "Between 0 to 100 and support both of JPG and PNG, default is 75"
+msgstr ""
+
+#: config/config.php:281
+msgid "Image path"
+msgstr ""
+
+#: config/config.php:289
+msgid "Image Extension"
+msgstr ""
+
+#: config/config.php:297
+msgid "Large Image height"
+msgstr ""
+
+#: config/config.php:305
+msgid "Large Image width"
+msgstr ""
+
+#: config/config.php:313
+msgid "Medium Image height"
+msgstr ""
+
+#: config/config.php:321
+msgid "Medium Image width"
+msgstr ""
+
+#: config/config.php:329
+msgid "Thumb Image height"
+msgstr ""
+
+#: config/config.php:337
+msgid "Thumb Image width"
+msgstr ""
+
+#: config/config.php:345
+msgid "Use lightbox"
+msgstr ""
+
+#: config/config.php:353
+msgid "Add Watermark"
+msgstr ""
+
+#: config/config.php:361
+msgid "Watermark Image"
+msgstr ""
+
+#: config/config.php:368
+msgid "Watermark Positio"
+msgstr ""
+
+#: config/config.php:374
+msgid "Top Left"
+msgstr ""
+
+#: config/config.php:375
+msgid "Top Right"
+msgstr ""
+
+#: config/config.php:376
+msgid "Bottom Left"
+msgstr ""
+
+#: config/config.php:377
+msgid "Bottom Right"
+msgstr ""
+
+#: config/config.php:387
+msgid "Social sharing items"
+msgstr ""
+
+#: config/config.php:401
+msgid "File Size"
+msgstr ""
+
+#: config/config.php:409
+msgid "File path"
+msgstr ""
+
+#: config/config.php:417
+msgid "File Extension"
+msgstr ""
+
+#: config/config.php:426
+msgid "Use vote system"
+msgstr ""
+
+#: config/config.php:435
+msgid "Use favourite system"
+msgstr ""
+
+#: config/config.php:444
+msgid "Show search type"
+msgstr ""
+
+#: config/config.php:452
+msgid "Show search price"
+msgstr ""
+
+#: config/config.php:460
+msgid "Show search category"
+msgstr ""
+
+#: config/config.php:469
+msgid "Order is active ?"
+msgstr ""
+
+#: config/config.php:477
+msgid "Anonymous users can set order"
+msgstr ""
+
+#: config/config.php:485
+msgid "Order type"
+msgstr ""
+
+#: config/config.php:491
+msgid "One time"
+msgstr ""
+
+#: config/config.php:492
+msgid "Recurring"
+msgstr ""
+
+#: config/config.php:493
+msgid "Installment"
+msgstr ""
+
+#: config/config.php:502
+msgid "Order stock"
+msgstr ""
+
+#: config/config.php:508
+msgid "Never check stock"
+msgstr ""
+
+#: config/config.php:509
+msgid "Manual setting"
+msgstr ""
+
+#: config/config.php:510
+msgid "Use product stock"
+msgstr ""
+
+#: config/config.php:511
+msgid "Use property stock"
+msgstr ""
+
+#: config/config.php:520
+msgid "Active discount system"
+msgstr ""
+
+#: config/config.php:528
+msgid "Order discount type"
+msgstr ""
+
+#: config/config.php:534
+msgid "General value for all products"
+msgstr ""
+
+#: config/config.php:535
+msgid "Set for each product"
+msgstr ""
+
+#: config/config.php:545
+msgid "Module search page title"
+msgstr ""
+
+#: config/config.php:553
+msgid "Module search page description"
+msgstr ""
+
+#: config/config.php:557
+msgid "Search on website products"
+msgstr ""
+
+#: config/config.php:561
+msgid "Module search page keywords"
+msgstr ""
+
+#: config/config.php:565
+msgid "search,product,shop,online,website"
+msgstr ""
+
+#: config/config.php:569
+msgid "Description for index page"
+msgstr ""
+
+#: config/config.php:577
+msgid "Force replace space by comma(,)"
+msgstr ""
+
+#: config/module.php:16
+msgid "Shop"
+msgstr ""
+
+#: config/module.php:17
+msgid "Shop system."
+msgstr ""
+
+#: config/navigation.php:26 config/page.php:113
+msgid "Tag list"
+msgstr ""
+
+#: config/navigation.php:37 config/page.php:17 config/page.php:87
+#: config/permission.php:33
+msgid "Product"
+msgstr ""
+
+#: config/navigation.php:59 config/page.php:27 config/permission.php:43
+msgid "Attribute"
+msgstr ""
+
+#: config/navigation.php:70 config/page.php:32 config/permission.php:48
+msgid "Attribute position"
+msgstr ""
+
+#: config/navigation.php:81 config/page.php:37 config/permission.php:53
+msgid "Order property"
+msgstr ""
+
+#: config/navigation.php:92 config/page.php:42 config/permission.php:58
+msgid "Discount"
+msgstr ""
+
+#: config/navigation.php:103 config/page.php:47 config/permission.php:63
+msgid "Attach"
+msgstr ""
+
+#: config/navigation.php:114 config/page.php:52 config/permission.php:68
+msgid "Special products"
+msgstr ""
+
+#: config/navigation.php:125 config/page.php:57 config/permission.php:73
+msgid "Logs"
+msgstr ""
+
+#: config/navigation.php:136 config/page.php:62 config/permission.php:78
+msgid "Tools"
+msgstr ""
+
+#: config/navigation.php:146 config/page.php:67 config/permission.php:83
+msgid "Json"
+msgstr ""
+
+#: config/page.php:75
+msgid "Index page"
+msgstr ""
+
+#: config/page.php:94
+msgid "Tags"
+msgstr ""
+
+#: config/page.php:100 config/permission.php:24
+msgid "Checkout"
+msgstr ""
+
+#: config/permission.php:17
+msgid "Global public resource"
+msgstr ""

@@ -1,0 +1,86 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Pi shop module\n"
+"POT-Creation-Date: 2016-06-05 15:52+0430\n"
+"PO-Revision-Date: \n"
+"Last-Translator: \n"
+"Language-Team: Pi\n"
+"Language: fa\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 1.8.7.1\n"
+"X-Poedit-SourceCharset: UTF-8\n"
+"X-Poedit-KeywordsList: _b\n"
+"X-Poedit-Basepath: ../..\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Poedit-SearchPath-0: .\n"
+
+#~ msgid "Basket"
+#~ msgstr "سبد خرید"
+
+#~ msgid "List of products on your basket"
+#~ msgstr "فهرست محصولات در سبد خرید شما"
+
+#~ msgid "Number"
+#~ msgstr "تعداد"
+
+#~ msgid "Total price"
+#~ msgstr "قیمت مجموع"
+
+#~ msgid "Your basket is empty"
+#~ msgstr "سبد خرید شما خالی است"
+
+#~ msgid "Go to basket"
+#~ msgstr "برو به سبد خرید"
+
+#~ msgid "View"
+#~ msgstr "نمایش"
+
+#~ msgid "More products"
+#~ msgstr "محصولات بیشتر"
+
+#~ msgid "Search"
+#~ msgstr "جستجو"
+
+#~ msgid "Out of stock"
+#~ msgstr "نا موجود"
+
+#~ msgid "New Product"
+#~ msgstr "محصولات جدید"
+
+#~ msgid "New Product list"
+#~ msgstr "فهرست محصولات جدید"
+
+#~ msgid "Show price"
+#~ msgstr "نمایش قیمت"
+
+#~ msgid "Show More link to module page"
+#~ msgstr "نمایش لینک ادامه به صفحه ماژول"
+
+#~ msgid "Set More link to module page"
+#~ msgstr "تنظیم لینک ادامه به صفحه ماژول"
+
+#~ msgid "Random Product"
+#~ msgstr "محصولات تصادفی"
+
+#~ msgid "RandomProduct list"
+#~ msgstr "فهرست محصولات تصادفی"
+
+#~ msgid "Category"
+#~ msgstr "شاخه ها"
+
+#~ msgid "Category list"
+#~ msgstr "فهرست شاخه ها"
+
+#~ msgid "Category show type"
+#~ msgstr "نوع نمایش"
+
+#~ msgid "Simple list"
+#~ msgstr "فهرست ساده"
+
+#~ msgid "Advanced list"
+#~ msgstr "فهرست پیشرفته"
+
+#~ msgid "Add To cart"
+#~ msgstr "خرید"

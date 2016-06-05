@@ -1,0 +1,1774 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Pi shop module\n"
+"POT-Creation-Date: 2016-06-05 16:02+0430\n"
+"PO-Revision-Date: \n"
+"Last-Translator: \n"
+"Language-Team: Pi\n"
+"Language: fa\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 1.8.7.1\n"
+"X-Poedit-SourceCharset: UTF-8\n"
+"X-Poedit-KeywordsList: __;_e\n"
+"X-Poedit-Basepath: ../..\n"
+"X-Poedit-SearchPath-0: .\n"
+
+#: config/config.php:92 src/Form/CampaignForm.php:144
+#: src/Form/SubscriptionForm.php:71 template/admin/campaign-index.phtml:41
+#: template/admin/people-index.phtml:9 template/front/finish.phtml:23
+msgid "Email"
+msgstr "ایمیل"
+
+#: config/config.php:93 src/Form/CampaignForm.php:145
+#: template/admin/campaign-index.phtml:45
+msgid "Sms"
+msgstr "پیامک"
+
+#: config/config.php:94 src/Form/CampaignForm.php:146
+#: template/admin/campaign-index.phtml:49
+msgid "Both"
+msgstr "هر دو"
+
+#: src/Controller/Admin/CampaignController.php:46
+#, php-format
+msgid "From %s to %s"
+msgstr "از %s تا %s"
+
+#: src/Controller/Admin/CampaignController.php:127
+msgid "Problem in upload image. please try again"
+msgstr "مشکل در بارگذاری تصویر، لطفا مجددا امتحان کنید"
+
+#: src/Controller/Admin/CampaignController.php:162
+msgid "Campaign data saved successfully."
+msgstr "اطلاعات کمپین با موفقیت ذخیره شد"
+
+#: src/Controller/Admin/CampaignController.php:180
+#: template/admin/campaign-index.phtml:4 template/admin/campaign-index.phtml:6
+msgid "Add campaign"
+msgstr "کمپین جدید"
+
+#: src/Controller/Admin/CampaignController.php:196
+#, php-format
+msgid "Image of %s removed"
+msgstr "تصویر مربوط به %s حذف شد"
+
+#: src/Controller/Admin/CampaignController.php:199
+msgid "Image not remove"
+msgstr "تصویر حذف نشد"
+
+#: src/Controller/Admin/CampaignController.php:203
+msgid "Please select campaign"
+msgstr "لطفا یک کمپن انتخاب نمایید"
+
+#: src/Controller/Front/IndexController.php:36
+#: src/Controller/Front/IndexController.php:42
+msgid "The campaign not found."
+msgstr "کمپین یافت نشد"
+
+#: src/Controller/Front/IndexController.php:101
+msgid "Your subscription data saved successfully."
+msgstr "شما با موفقیت مشترک سیستم شده اید."
+
+#: src/Controller/Front/IndexController.php:139
+msgid "Nothing Set"
+msgstr "چیزی تنظیم نشده"
+
+#: src/Form/CampaignForm.php:47 template/admin/campaign-index.phtml:13
+msgid "Title"
+msgstr "عنوان"
+
+#: src/Form/CampaignForm.php:59
+msgid "slug"
+msgstr "اسلاگ"
+
+#: src/Form/CampaignForm.php:70
+msgid "Description"
+msgstr "توضیحات"
+
+#: src/Form/CampaignForm.php:83
+msgid "After subscription"
+msgstr "متن نمایش داده شد بعد از اشتراک"
+
+#: src/Form/CampaignForm.php:96
+msgid "Text email"
+msgstr "متن ارسالی در ایمیل"
+
+#: src/Form/CampaignForm.php:109
+msgid "Text sms"
+msgstr "متن اسالی در پیامک"
+
+#: src/Form/CampaignForm.php:115
+msgid "Prefix : Dear first_name last_name , "
+msgstr "پیشوند : {نام} {نام خانوادگی} عزیز،"
+
+#: src/Form/CampaignForm.php:124 src/Form/CampaignForm.php:142
+msgid "Status"
+msgstr "وضعیت"
+
+#: src/Form/CampaignForm.php:126
+msgid "Published"
+msgstr "منتشر شده"
+
+#: src/Form/CampaignForm.php:127
+msgid "Pending review"
+msgstr "در انتظار تایید"
+
+#: src/Form/CampaignForm.php:128
+msgid "Draft"
+msgstr "پیش نویس"
+
+#: src/Form/CampaignForm.php:129
+msgid "Private"
+msgstr "خصوصی"
+
+#: src/Form/CampaignForm.php:130
+msgid "Delete"
+msgstr "حذف"
+
+#: src/Form/CampaignForm.php:157
+msgid "Time start"
+msgstr "تاریخ آغاز"
+
+#: src/Form/CampaignForm.php:167
+msgid "Time end"
+msgstr "تاریخ پایان"
+
+#: src/Form/CampaignForm.php:190
+msgid "Remove image"
+msgstr "حذف تصویر"
+
+#: src/Form/CampaignForm.php:207
+msgid "Image"
+msgstr "تصویر"
+
+#: src/Form/CampaignForm.php:220
+msgid "SEO options"
+msgstr "گزینه های سئو"
+
+#: src/Form/CampaignForm.php:227
+msgid "SEO Title"
+msgstr "عنوان سئو"
+
+#: src/Form/CampaignForm.php:233
+msgid "Between 10 to 70 character"
+msgstr "بین ۱۰ تا ۷۰ کارکتر"
+
+#: src/Form/CampaignForm.php:240
+msgid "SEO Keywords"
+msgstr "کلمات کلیدی سئو"
+
+#: src/Form/CampaignForm.php:246
+msgid "Between 5 to 10 words"
+msgstr "بین ۵ تا ۱۰ کلمه"
+
+#: src/Form/CampaignForm.php:253
+msgid "SEO Description"
+msgstr "توضیح سئو"
+
+#: src/Form/CampaignForm.php:259
+msgid "Between 80 to 160 character"
+msgstr "بین ۸۰ تا ۱۶۰ کلمه"
+
+#: src/Form/CampaignForm.php:267
+msgid "Submit"
+msgstr "ارسال"
+
+#: src/Form/SubscriptionForm.php:47 template/admin/people-index.phtml:7
+#: template/front/finish.phtml:15
+msgid "First name"
+msgstr "نام"
+
+#: src/Form/SubscriptionForm.php:59 template/admin/people-index.phtml:8
+#: template/front/finish.phtml:19
+msgid "Last name"
+msgstr "نام خانوادگی"
+
+#: src/Form/SubscriptionForm.php:83 template/admin/people-index.phtml:10
+#: template/front/finish.phtml:27
+msgid "Mobile"
+msgstr "موبایل"
+
+#: src/Form/SubscriptionForm.php:97
+msgid "Subscription"
+msgstr "اشتراک"
+
+#: template/admin/campaign-index.phtml:9
+msgid "List of campaigns"
+msgstr "فهرست کمپین ها"
+
+#: template/admin/campaign-index.phtml:12 template/admin/people-index.phtml:6
+msgid "ID"
+msgstr "شناسه"
+
+#: template/admin/campaign-index.phtml:14
+msgid "Join"
+msgstr "عضویت"
+
+#: template/admin/campaign-index.phtml:15
+msgid "Type"
+msgstr "نوع"
+
+#: template/admin/campaign-index.phtml:16
+msgid "Time"
+msgstr "زمان"
+
+#: template/admin/campaign-index.phtml:17
+msgid "Action"
+msgstr "عملکرد"
+
+#: template/admin/campaign-index.phtml:54
+#: template/admin/campaign-index.phtml:56
+msgid "Edit"
+msgstr "ویرایش"
+
+#: template/admin/campaign-index.phtml:57
+#: template/admin/campaign-index.phtml:59
+msgid "View"
+msgstr "نمایش"
+
+#: template/admin/campaign-update.phtml:16
+msgid "Remove image category in process"
+msgstr "حذف تصویر شاخه در حال انجام است"
+
+#: template/admin/people-index.phtml:3
+msgid "List of peoples"
+msgstr "فهرست افراد عضو در خبرنامه"
+
+#: template/admin/people-index.phtml:11
+msgid "Is user?"
+msgstr "کاربر عضو؟"
+
+#: template/admin/people-index.phtml:45
+msgid "Close"
+msgstr "بستن"
+
+#: template/admin/people-index.phtml:48
+msgid "User information"
+msgstr "اطلاعات کاربر"
+
+#: template/admin/people-index.phtml:57
+msgid "No"
+msgstr "خیر"
+
+#~ msgid "Text"
+#~ msgstr "متن"
+
+#~ msgid "Link"
+#~ msgstr "لینک"
+
+#~ msgid "Video"
+#~ msgstr "ویدیو"
+
+#~ msgid "Audio"
+#~ msgstr "صدا"
+
+#~ msgid "File"
+#~ msgstr "فایل"
+
+#~ msgid "Currency"
+#~ msgstr "قیمت"
+
+#~ msgid "Date"
+#~ msgstr "تاریخ"
+
+#~ msgid "Number"
+#~ msgstr "تعداد"
+
+#~ msgid "Select"
+#~ msgstr "انتخاب"
+
+#~ msgid "Checkbox"
+#~ msgstr "چک باکس"
+
+#~ msgid "Hidden"
+#~ msgstr "مخفی"
+
+#~ msgid "Category list"
+#~ msgstr "فهرست شاخه ها"
+
+#~ msgid "Cart"
+#~ msgstr "سبد خرید"
+
+#~ msgid "Finish"
+#~ msgstr "پایان"
+
+#~ msgid "Tag list"
+#~ msgstr "فهرست برچسب ها"
+
+#~ msgid "Compare products"
+#~ msgstr "مقایسه محصولات"
+
+#~ msgid "In stock"
+#~ msgstr "موجود"
+
+#~ msgid "Out of stock"
+#~ msgstr "نا موجود"
+
+#~ msgid "Coming soon"
+#~ msgstr "به زودی"
+
+#~ msgid "Contact"
+#~ msgstr "تماس بگیرید"
+
+#~ msgid "Variable stock"
+#~ msgstr "موجودی متغیر"
+
+#~ msgid "You must select product"
+#~ msgstr "شما باید یک محصول را انتخاب کنید"
+
+#~ msgid "Your selected product not exist"
+#~ msgstr "محصول انتخابی شما موجود نیست"
+
+#~ msgid "Attach files to %s"
+#~ msgstr "پیوست فایل برای %s"
+
+#~ msgid "You must select file"
+#~ msgstr "شما باید یک فایل انتخاب کنید"
+
+#~ msgid "All changes in file saved successfully."
+#~ msgstr "همه تغییرات در فایل با موفقیت ذخیره شد"
+
+#~ msgid "Invalid data, please check and re-submit."
+#~ msgstr "اطلاعات اشتباه، لطفا بررسی کنید و دوباره ارسال کنید"
+
+#~ msgid "Edit file"
+#~ msgstr "ویرایش فایل"
+
+#~ msgid "Your attached file remove successfully"
+#~ msgstr "فایل پیوست شده شما با موفقیت حذف شد"
+
+#~ msgid "Please select file"
+#~ msgstr "لطفا یک فایل انتخاب کنید"
+
+#~ msgid "Attribute field type not set."
+#~ msgstr "نوع فیلد خواصیت تنظیم نشده است"
+
+#~ msgid "Attribute field data saved successfully."
+#~ msgstr "اطلاعات صفت جدید با موفقیت ذخیره شد"
+
+#~ msgid "Add attribute - type : %s"
+#~ msgstr "خاصیت جدید - نوع : %s"
+
+#~ msgid "Selected field delete"
+#~ msgstr "فیلد انتخابی حذف شد"
+
+#~ msgid "Please select field"
+#~ msgstr "لطفا یک فیلد انتخاب کنید"
+
+#~ msgid "Category data saved successfully."
+#~ msgstr "اطلاعات شاخه با موفقیت ذخیره شد"
+
+#~ msgid "Add a category"
+#~ msgstr "شاخه جدید"
+
+#~ msgid "Please select category"
+#~ msgstr "لطفا یک شاخه انتخاب کنید"
+
+#~ msgid "Discount data saved successfully."
+#~ msgstr "اطلاعات تخفیف با موفقیت ذخیره شد"
+
+#~ msgid "Add discount"
+#~ msgstr "درج تخفیف"
+
+#~ msgid "Attribute position data saved successfully."
+#~ msgstr "اطلاعات موقعیت خواص با موفقیت ذخیره شد"
+
+#~ msgid "Add position"
+#~ msgstr "موقعیت جدید"
+
+#~ msgid "View filtered products"
+#~ msgstr "نمایش محصولات فیلتر شده"
+
+#~ msgid "Not valid"
+#~ msgstr "صحیح نیست"
+
+#~ msgid "Not set"
+#~ msgstr "تنظیم نشده"
+
+#~ msgid "Product data saved successfully."
+#~ msgstr "اطلاعات محصول با موفقیت ذخیره شد"
+
+#~ msgid "Please select product"
+#~ msgstr "لطفا یک محصول انتخاب کنید"
+
+#~ msgid "%s set recommended successfully"
+#~ msgstr "محصول %s پیشنهاد شده شد"
+
+#~ msgid "Error in set recommended for %s product"
+#~ msgstr "خطا در تنظیم پیشنهاد شده برای محصول %s"
+
+#~ msgid "Add Related"
+#~ msgstr "اضافه کردن مشابه"
+
+#~ msgid "OK Add"
+#~ msgstr "با موفقیت اضافه شد"
+
+#~ msgid "Error Add , It added before"
+#~ msgstr "خطا، این مورد قبلا اضافه شده است"
+
+#~ msgid "Error , Product and related is same"
+#~ msgstr "خطا، محصول و مشابه یکی هستند"
+
+#~ msgid "OK Remove"
+#~ msgstr "با موفقیت حذف شد"
+
+#~ msgid "Product prices updated successfully."
+#~ msgstr "قیمت محصولات به موفقیت به روز شد"
+
+#~ msgid "Order property data saved successfully."
+#~ msgstr "اطلاعات ویژگی سفارش با موفقیت ذخیره شد"
+
+#~ msgid "Add property"
+#~ msgstr "ویژگی جدید"
+
+#~ msgid "Special data saved successfully."
+#~ msgstr "اطلاعات محولات ویژه با موفقیت ذخیره شد"
+
+#~ msgid "Add Special"
+#~ msgstr "محصول ویژه جدید"
+
+#~ msgid "Selected special delete"
+#~ msgstr "محصول ویژه انتخاب شده حذف شد"
+
+#~ msgid "Please select special"
+#~ msgstr "لطفا یک محصول ویژه انتخاب کنید"
+
+#~ msgid "Rebuild thie module links on sitemap module tabels"
+#~ msgstr "شما می توانید همه مطالب درج شده را دوباره سازی کنید، بعد از دوباره سازی همه اطلاعات قدیمی شما به روز می شود، و شما باید تاریخ شروع و آغاز مطالب را برای دوباره سازی درج کنید"
+
+#~ msgid "Sitemap rebuild finished"
+#~ msgstr "دوباره سازی نقشه سایت تکمیل شد"
+
+#~ msgid "Rebuild sitemap links"
+#~ msgstr "دوباره سازی لینک های نقشه سایت"
+
+#~ msgid "Shop feed"
+#~ msgstr "خوراک فروشگاه"
+
+#~ msgid "Recent products."
+#~ msgstr "آخرین محصولات اضافه شده"
+
+#~ msgid "So sorry, At this moment order is inactive"
+#~ msgstr "متاسفانه در این لحظه امکان ثبت سفارش وجود ندارد"
+
+#~ msgid "Your cart are empty."
+#~ msgstr "سبد خرید شما خالی است"
+
+#~ msgid "The product was not marketable."
+#~ msgstr "این محصول قابل فروش نیست"
+
+#~ msgid "Your cart are empty"
+#~ msgstr "سبد خرید شما خالی است"
+
+#~ msgid "Selected product removed from your cart"
+#~ msgstr "محصول انتخاب شده از سبد خرید شما حذف شد"
+
+#~ msgid "Update number"
+#~ msgstr "تغییر تعداد"
+
+#~ msgid "You can not set product number to 0"
+#~ msgstr "شما نمی توانید تعداد یک محصول را ۰ تنظیم کنید"
+
+#~ msgid "Order not set."
+#~ msgstr "سفارشی انتخاب نشده"
+
+#~ msgid "It not your order."
+#~ msgstr "این سفارش مربوط به شما نیست"
+
+#~ msgid "This order not pay"
+#~ msgstr "این سفارش پرداخت نشده"
+
+#~ msgid "This is old order and you pay it before"
+#~ msgstr "این یک سفارش قدیمی است و شما قبلا آن را پرداخت کرده اید"
+
+#~ msgid "The category not found."
+#~ msgstr "شاخه یافت نشد"
+
+#~ msgid "New products"
+#~ msgstr "آخرین محصولات"
+
+#~ msgid "Shop index"
+#~ msgstr "صفحه اول فروشگاه"
+
+#~ msgid "Password not set or wrong"
+#~ msgstr "واژه رمز تنظیم نشده یا اشتباه است"
+
+#~ msgid "Your question send to admin"
+#~ msgstr "سوال شما برای مدیر ارسال شد"
+
+#~ msgid "Tag module not installed."
+#~ msgstr "ماژول برچسب نصب نشده است."
+
+#~ msgid "The tag not set."
+#~ msgstr "برچسب تنظیم نشده"
+
+#~ msgid "The tag not found."
+#~ msgstr "برچسب یافت نشد"
+
+#~ msgid "The keyword not found."
+#~ msgstr "کلمه مورد جستجو یافت نشد"
+
+#~ msgid "Products related to %s"
+#~ msgstr "محصولات مرتبط با %s"
+
+#~ msgid "Categories related to %s"
+#~ msgstr "شاخه ها و برند های مرتبط با %s"
+
+#~ msgid "The product not found."
+#~ msgstr "این محصول یافت نشد"
+
+#~ msgid "You can any question about this product from us, we read your question and answer you as soon as possible"
+#~ msgstr "هر نوع سوالی را که در مورد این محصول دارید از ما بپرسید، ما در اولین فرصت ممکن به شما پاسخ خواهیم داد"
+
+#~ msgid "Your question was send successfully to admin."
+#~ msgstr "سوال شما با موفقیت برای مدیر سیستم ارسال شد"
+
+#~ msgid "Nothing set"
+#~ msgstr "هیچ چیز تنظیم نشده"
+
+#~ msgid "All products by %s tag"
+#~ msgstr "همه محصولات برچسب %s"
+
+#~ msgid "List of all used tags on shop"
+#~ msgstr "فهرست تمام برچسب های استفاده شده در فروشگاه"
+
+#~ msgid "Search"
+#~ msgstr "جستجو"
+
+#~ msgid "Product"
+#~ msgstr "محصول"
+
+#~ msgid "Online"
+#~ msgstr "آنلاین"
+
+#~ msgid "Offline"
+#~ msgstr "آفلاین"
+
+#~ msgid "Name"
+#~ msgstr "نام"
+
+#~ msgid "Set name for call anywhere, a-z 0-9 allowed"
+#~ msgstr "تنظیم نام برای فراخوانی در تمام بخش‌ها، مقادیر مجاز a-z 0-9 می باشد."
+
+#~ msgid "Category"
+#~ msgstr "شاخه"
+
+#~ msgid "Set"
+#~ msgstr "محل نمایش"
+
+#~ msgid "General data"
+#~ msgstr "اطلاعات عمومی"
+
+#~ msgid "Use `|` as delimiter to separate select box elements"
+#~ msgstr "از `|` به عنوان جدا کننده برای تفکیک المان ها استفاده شود"
+
+#~ msgid "Default data"
+#~ msgstr "اطلاعات پیش فرض"
+
+#~ msgid "Extra information"
+#~ msgstr "اطلاعات اضافی"
+
+#~ msgid "Put URL for click by user"
+#~ msgstr "درج ادرس برای کلیک توسط کاربر"
+
+#~ msgid "Icon"
+#~ msgstr "آیکن"
+
+#~ msgid "Use fontawesome.io icons, and set icon name like fa-home"
+#~ msgstr "از آیکن های fontawesome.io استفاده شود، و نام آیکن موارد شود ، مثل : fa-home"
+
+#~ msgid "Parent Category"
+#~ msgstr "شاخه والد"
+
+#~ msgid "Display order"
+#~ msgstr "ترتیب نمایش"
+
+#~ msgid "User role"
+#~ msgstr "نقش کاربر"
+
+#~ msgid "Discount percent"
+#~ msgstr "درصد تخفیف"
+
+#~ msgid "Number and between 1 to 99"
+#~ msgstr "عددی و بین ۰ تا ۹۹"
+
+#~ msgid "All Category"
+#~ msgstr "همه شاخه ها"
+
+#~ msgid "Order"
+#~ msgstr "سفارش"
+
+#~ msgid "Order information"
+#~ msgstr "اطلاعات سفارش"
+
+#~ msgid "Add %s"
+#~ msgstr "%s جدید"
+
+#~ msgid "Stock"
+#~ msgstr "موجودی"
+
+#~ msgid "Price"
+#~ msgstr "قیمت"
+
+#~ msgid "%s list"
+#~ msgstr "فهرست %s"
+
+#~ msgid "General options"
+#~ msgstr "گزینه های سراسری"
+
+#~ msgid "Second title"
+#~ msgstr "عنوان دوم ( انگلیسی )"
+
+#~ msgid "Summary"
+#~ msgstr "خلاصه"
+
+#~ msgid "Keep summery short, 2 or 3 lines"
+#~ msgstr "متن خلاصه کوتاه و نهایتا ۲ یا ۳ خط نگه دارید"
+
+#~ msgid "Main category"
+#~ msgstr "شاخه اصلی"
+
+#~ msgid "Use for breadcrumbs ,mobile app and attribute"
+#~ msgstr "برای استفاده در ناوبری ، نرم افزار موبایل و خواص محصول"
+
+#~ msgid "Product options"
+#~ msgstr "گزینه های محصول"
+
+#~ msgid "Stock type"
+#~ msgstr "نوع موجودی"
+
+#~ msgid "Variable stock (make order without active payment)"
+#~ msgstr "موجودی متغیر ( ثبت سفارش بدون امکان پرداخت )"
+
+#~ msgid "Real price"
+#~ msgstr "قیمت اصلی"
+
+#~ msgid "Price Discount"
+#~ msgstr "تخفیف قیمت"
+
+#~ msgid "Display prices"
+#~ msgstr "قیمت نمایشی"
+
+#~ msgid "Price title"
+#~ msgstr "عنوان قیمت"
+
+#~ msgid "Discount options"
+#~ msgstr "گزینه های تخفیف"
+
+#~ msgid "Tags"
+#~ msgstr "برچسب ها"
+
+#~ msgid "Use `|` as delimiter to separate tag terms"
+#~ msgstr "با استفاده از `|` کلمات را از هم جدا کنید"
+
+#~ msgid "Influence stock"
+#~ msgstr "تاثیر در موجودی"
+
+#~ msgid "Influence price"
+#~ msgstr "تاثیر در قیمت"
+
+#~ msgid "CheckBox"
+#~ msgstr "CheckBox"
+
+#~ msgid "SelectBox"
+#~ msgstr "SelectBox"
+
+#~ msgid "Question"
+#~ msgstr "سوال"
+
+#~ msgid "Title search type"
+#~ msgstr "نوع جستجو در عنوان"
+
+#~ msgid "Included"
+#~ msgstr "شامل"
+
+#~ msgid "Start with"
+#~ msgstr "شروع با"
+
+#~ msgid "End with"
+#~ msgstr "پایان با"
+
+#~ msgid "According"
+#~ msgstr "مطابق با"
+
+#~ msgid "Select for rebuild"
+#~ msgstr "انتخاب برای دوباره سازی"
+
+#~ msgid "All of tables"
+#~ msgstr "همه جدول ها"
+
+#~ msgid "Just product table"
+#~ msgstr "فقط جدول محصولات"
+
+#~ msgid "Just category table"
+#~ msgstr "فقط جدول شاخه ها"
+
+#~ msgid "Home Page"
+#~ msgstr "صفحه اصلی"
+
+#~ msgid "Select product for add to Special"
+#~ msgstr "انتخاب محصول برای درج در ویژه ها"
+
+#~ msgid "Default"
+#~ msgstr "پیش فرض"
+
+#~ msgid "default"
+#~ msgstr "default"
+
+#~ msgid "This is a default category for shop module"
+#~ msgstr "این شاخه پیش فرض برای ماژول فروشگاه است"
+
+#~ msgid "default category"
+#~ msgstr "شاخه پیش فرض"
+
+#~ msgid "default,category"
+#~ msgstr "شاخه,پیش فرض"
+
+#~ msgid "Demo product"
+#~ msgstr "محصول تست"
+
+#~ msgid "demo-product"
+#~ msgstr "demo-product"
+
+#~ msgid "This is a summery for this demo product"
+#~ msgstr "این متن خلاصه برای محصول تست است"
+
+#~ msgid "demo product"
+#~ msgstr "محصول تست"
+
+#~ msgid "demo,product"
+#~ msgstr "محصول,تست"
+
+#~ msgid "Default information added."
+#~ msgstr "اطلاعات اولیه درج شد"
+
+#~ msgid "Edit basic information"
+#~ msgstr "ویرایش اطلاعات پایه"
+
+#~ msgid "Edit additional information"
+#~ msgstr "ویرایش اطلاعات اضافی"
+
+#~ msgid "Attach files"
+#~ msgstr "پیوست فایل"
+
+#~ msgid "Related products"
+#~ msgstr "محصولات مشابه"
+
+#~ msgid "Back"
+#~ msgstr "برگشت"
+
+#~ msgid "Preview"
+#~ msgstr "پیش نمایش"
+
+#~ msgid "Create"
+#~ msgstr "ایجاد"
+
+#~ msgid "Hits"
+#~ msgstr "تاریخ"
+
+#~ msgid "Size"
+#~ msgstr "اندازه"
+
+#~ msgid "In process"
+#~ msgstr "در حال پردازش"
+
+#~ msgid "Get it"
+#~ msgstr "دریافت"
+
+#~ msgid "File title"
+#~ msgstr "عنوان فایل"
+
+#~ msgid "Product title"
+#~ msgstr "عنوان محصول"
+
+#~ msgid "List of attached files"
+#~ msgstr "فهرست تمام فایل های پیوست شده"
+
+#~ msgid "Information"
+#~ msgstr "اطلاعات"
+
+#~ msgid "create"
+#~ msgstr "ایجاد"
+
+#~ msgid "Get"
+#~ msgstr "دریافت"
+
+#~ msgid "Edit from product"
+#~ msgstr "ویرایش از محصول"
+
+#~ msgid "Error"
+#~ msgstr "خطا"
+
+#~ msgid "No file upload yet"
+#~ msgstr "هنوز هیچ فایلی بارگذاری نشده است"
+
+#~ msgid "Add attribute"
+#~ msgstr "خاصیت جدید"
+
+#~ msgid "Add text field"
+#~ msgstr "فیلد متنی جدید"
+
+#~ msgid "Add link field"
+#~ msgstr "فیلد لینک جدید"
+
+#~ msgid "Add video field"
+#~ msgstr "فیلد ویدیو جدید"
+
+#~ msgid "Add audio field"
+#~ msgstr "فیلد صدای جدید"
+
+#~ msgid "Add file field"
+#~ msgstr "فیلد فایل جدید"
+
+#~ msgid "Add currency field"
+#~ msgstr "فیلد قیمت جدید"
+
+#~ msgid "Add date field"
+#~ msgstr "فیلد تاریخ جدید"
+
+#~ msgid "Add number field"
+#~ msgstr "فیلد عددی جدید"
+
+#~ msgid "Add select field"
+#~ msgstr "باکس انتخاب جدید"
+
+#~ msgid "Add checkbox field"
+#~ msgstr "چک باکس جدید"
+
+#~ msgid "List of attributes"
+#~ msgstr "فهرست خواص محصول"
+
+#~ msgid "Add Category"
+#~ msgstr "شاخه جدید"
+
+#~ msgid "List of Categores"
+#~ msgstr "فهرست شاخه ها"
+
+#~ msgid "Trash"
+#~ msgstr "سطل آشغال"
+
+#~ msgid "List of discounts"
+#~ msgstr "فهرست تخفیف ها"
+
+#~ msgid "Role"
+#~ msgstr "نقش"
+
+#~ msgid "Percent"
+#~ msgstr "درصد تخفیف"
+
+#~ msgid "List of json output links"
+#~ msgstr "فهرست لینک های خروجی جیسون"
+
+#~ msgid "List of user logs"
+#~ msgstr "فهرست گزارش فعالیت مدیران"
+
+#~ msgid "User"
+#~ msgstr "کاربر"
+
+#~ msgid "Ip"
+#~ msgstr "آی پی"
+
+#~ msgid "Section"
+#~ msgstr "بخش"
+
+#~ msgid "Item"
+#~ msgstr "آیتم"
+
+#~ msgid "Operation"
+#~ msgstr "عملکرد"
+
+#~ msgid "List of positions"
+#~ msgstr "فهرست موقعیت ها"
+
+#~ msgid "Add product"
+#~ msgstr "محصول جدید"
+
+#~ msgid "All products"
+#~ msgstr "همه محصولات"
+
+#~ msgid "List of product"
+#~ msgstr "فهرست محصولات"
+
+#~ msgid "Manage"
+#~ msgstr "مدیریت"
+
+#~ msgid "Update prices"
+#~ msgstr "به روز کردن قیمت"
+
+#~ msgid "Recommended in process"
+#~ msgstr "تنظیم به صورت پیشنهاد شده در حال انجام است"
+
+#~ msgid "You can manage product related here, remove related productes or find new product by search system and add them to related"
+#~ msgstr "شما میتوانید محصولات مشابه را در اینجا مدیریت کنید، محصولات مشابه را حذف کنید و یا محصولات جدید برای درج به عنوان محصول مشابه جستجو کنید"
+
+#~ msgid "List of related products"
+#~ msgstr "فهرست محصولات مشابه"
+
+#~ msgid "Remove"
+#~ msgstr "حذف"
+
+#~ msgid "Search result"
+#~ msgstr "نتایج جستجو"
+
+#~ msgid "Add"
+#~ msgstr "اضافه کردن"
+
+#~ msgid "Search form"
+#~ msgstr "فرم جستجو"
+
+#~ msgid "Related product in process"
+#~ msgstr "در حال پردازش محصولات مشابه"
+
+#~ msgid "Remove image product in process"
+#~ msgstr "حذف تصویر محصول در حال انجام است"
+
+#~ msgid "List of properties"
+#~ msgstr "فهرست ویژگی ها"
+
+#~ msgid "List of specials"
+#~ msgstr "فهرست محصولات ویژه"
+
+#~ msgid "Sitemap"
+#~ msgstr "نقشه سایت"
+
+#~ msgid "How this part work?"
+#~ msgstr "این بخش چگونه کار می کند؟"
+
+#~ msgid "Tools system, help you to manage your module, Update database and remove unused information"
+#~ msgstr "ابزار ها، به شما برای مدیریت ماژول کمک میکند، با به روز رسانی پایگاه داده ها و حذف اطلاعات قدیمی. در این مقطع ابزار های زیر در دسترس شما است"
+
+#~ msgid "Manage links on sitemap module"
+#~ msgstr "مدیریت لینک ها در ماژول نقشه سایت"
+
+#~ msgid "Attached archives"
+#~ msgstr "آرشیو های پیوست شده"
+
+#~ msgid "Attached docs"
+#~ msgstr "پرونده های پیوست شده"
+
+#~ msgid "Attached pdfs"
+#~ msgstr "پی دی اف های پیوست شده"
+
+#~ msgid "Attached files"
+#~ msgstr "فایل های پیوست شده"
+
+#~ msgid "No category has been made on this part yet. please check this page later"
+#~ msgstr "هنوز هیچ شاخه ای برای این بخش ساخته نشده است. لطفا بعدا این صفحه را بررسی نمایید"
+
+#~ msgid "Are you sure to delete this product from your cart?"
+#~ msgstr "آیا اطمینان دارید که میخواهید این محصول را از سبد خرید خود حذف کنید؟"
+
+#~ msgid "List of prodcuts on cart"
+#~ msgstr "فهرست محصولات انتخابی در سبد خرید"
+
+#~ msgid "Discount"
+#~ msgstr "تخفیف"
+
+#~ msgid "Total"
+#~ msgstr "مجموع"
+
+#~ msgid "Payment after admin validation"
+#~ msgstr "پرداخت بعد از بررسی و تایید دستی مدیر"
+
+#~ msgid "Back to Shoping"
+#~ msgstr "ادامه خرید"
+
+#~ msgid "Empty cart"
+#~ msgstr "خالی کردن"
+
+#~ msgid "Pre Invoice"
+#~ msgstr "پیش فاکتور"
+
+#~ msgid "Total Price"
+#~ msgstr "قیمت کل"
+
+#~ msgid "Total Discount"
+#~ msgstr "تخفیف کل"
+
+#~ msgid "Total Number"
+#~ msgstr "تعداد کل"
+
+#~ msgid "Total Shipping"
+#~ msgstr "هزینه ارسال کل"
+
+#~ msgid "Final Price"
+#~ msgstr "قیمت نهایی"
+
+#~ msgid "Next"
+#~ msgstr "خرید خود را نهایی کنید"
+
+#~ msgid "Finish order payment"
+#~ msgstr "تکمیل پرداخت سفارش"
+
+#~ msgid "You pay your order at <strong>%s</strong> by <strong>%s</strong> gateway And your order id is <strong>%s</strong>"
+#~ msgstr "شما سفارش خود را در تاریخ <strong>%s</strong> با استفاده از درگاه پرداخت <strong>%s</strong> ثبت و پرداخت کرده اید و شماره سفارش شما <strong>%s</strong> می باشد"
+
+#~ msgid "Order link"
+#~ msgstr "لینک سفارش"
+
+#~ msgid "User panel"
+#~ msgstr "پنل سفارشات"
+
+#~ msgid "You put this product on compare list before"
+#~ msgstr "شما قبلا این محصول را فهرست مقایسه درج کرده اید"
+
+#~ msgid "You can add just 5 products on compare list"
+#~ msgstr "شما فقط می توانید ۵ محصول به فهرست مقایسه اضافه کنید"
+
+#~ msgid "Marketable"
+#~ msgstr "آماده برای فروش"
+
+#~ msgid "All"
+#~ msgstr "همه"
+
+#~ msgid "Not marketable"
+#~ msgstr "غیر قابل فروش"
+
+#~ msgid "Compare"
+#~ msgstr "مقایسه"
+
+#~ msgid "Stock status"
+#~ msgstr "وضعیت"
+
+#~ msgid "Your compare list is empty, back to product list and select products to compare"
+#~ msgstr "فهرست محصولات انتخابی برای مقایسه خالی است، به صفحه فهرست محصولات برگردید و چند محصول را برای مقایسه انتخاب کنید"
+
+#~ msgid "Add to cart"
+#~ msgstr "اضافه به سبد خرید"
+
+#~ msgid "Ask question about product"
+#~ msgstr "ارسال سوال در مورد این محصول"
+
+#~ msgid "Ask question"
+#~ msgstr "ارسال سوال"
+
+#~ msgid "Related Products"
+#~ msgstr "محصولات مشابه"
+
+#~ msgid "Special products"
+#~ msgstr "محصولات ویژه"
+
+#~ msgid "No keyword has been used as tag on this part yet. please check this page later"
+#~ msgstr "هنوز هیچ کلمه کلیدی برای این بخش ساخته نشده است. لطفا بعدا این صفحه را بررسی نمایید"
+
+#~ msgid "Tag"
+#~ msgstr "برچسب"
+
+#~ msgid "Price from"
+#~ msgstr "قیمت از"
+
+#~ msgid "Price to"
+#~ msgstr "قیمت تا"
+
+#~ msgid "Month"
+#~ msgstr "ماه"
+
+#~ msgid "Due time"
+#~ msgstr "سررسید پرداخت"
+
+#~ msgid "PerPayment"
+#~ msgstr "پیش پرداخت"
+
+#~ msgid "Month %s"
+#~ msgstr "ماه %s ام"
+
+#~ msgid "Search again"
+#~ msgstr "جستجوی مجدد"
+
+#~ msgid "Search result of %s"
+#~ msgstr "نتایج جستجوی %s"
+
+#~ msgid "Manage additional information"
+#~ msgstr "مدیریت اطلاعات تکمیلی"
+
+#~ msgid "Set name for call anywhere"
+#~ msgstr "تنظیم نام برای فراخوانی در هر قسمت"
+
+#~ msgid "Result"
+#~ msgstr "نتیجه"
+
+#~ msgid "Your search session is empty, please search again"
+#~ msgstr "فیلتر های جستجوی شما خالی است ، لطفا مجددا جستجو نمایید"
+
+#~ msgid "Text : type text content"
+#~ msgstr "متن : نوشتن محتوای متنی"
+
+#~ msgid "Link : add url for click"
+#~ msgstr "لینک : اضافه کردن لینک برای کلیک"
+
+#~ msgid "Video : add flv or mp4 url for play on video player"
+#~ msgstr "ویدیو : درج لینک flv یا mp4 برای نمایش در پخش کننده ویدیو"
+
+#~ msgid "Audio : add mp3 url for play on audio player"
+#~ msgstr "صدا : درج لینک mp3 برای پخش در پخش کننده صوتی"
+
+#~ msgid "File : add file link for download"
+#~ msgstr "فایل : درج لینک فایل برای دانلود"
+
+#~ msgid "Currency : add view price for anything"
+#~ msgstr "قیمت : درج قیمت برای نمایش"
+
+#~ msgid "Date : add date for view"
+#~ msgstr "تاریخ : درج تاریخ برای نمایش"
+
+#~ msgid "Number : add number"
+#~ msgstr "عدد : درج عدد"
+
+#~ msgid "Select : add select box for choose"
+#~ msgstr "انتخاب : درج باکس انتخاب"
+
+#~ msgid "Checkbox : add check box for 0 or 1"
+#~ msgstr "چک باکس : درج چک باکس با ذخیره ۰ یا ۱"
+
+#~ msgid "Finished"
+#~ msgstr "تمام شده"
+
+#~ msgid "Add To cart"
+#~ msgstr "خرید"
+
+#~ msgid "Specifications"
+#~ msgstr "مشخصات"
+
+#~ msgid "Media"
+#~ msgstr "رسانه"
+
+#~ msgid "Related"
+#~ msgstr "مشابه"
+
+#~ msgid "All products on %s category"
+#~ msgstr "تمام محصولات در شاخه  %s"
+
+#~ msgid "Publish date"
+#~ msgstr "تاریخ انتشار"
+
+#~ msgid "Expire date"
+#~ msgstr "تاریخ ابطال"
+
+#~ msgid "Publish"
+#~ msgstr "منتشر شده"
+
+#~ msgid "Expire"
+#~ msgstr "باطی شده"
+
+#~ msgid "Your search successfully. Go to result page"
+#~ msgstr "جستجوی شما با موفقیت انجام شد، نتایج آن را مشاهده می نمایید"
+
+#~ msgid "Value"
+#~ msgstr "مقدار"
+
+#~ msgid "Color"
+#~ msgstr "رنگ"
+
+#~ msgid "Warranty"
+#~ msgstr "گارانتی"
+
+#~ msgid "Refresh cart"
+#~ msgstr "به روز کردن"
+
+#~ msgid "Stock Alert"
+#~ msgstr "اخطار پایان موجودی"
+
+#~ msgid "Product data not saved."
+#~ msgstr "اطلاعات محصول ذخیره نشد"
+
+#~ msgid "Special data not saved."
+#~ msgstr "اطلاعات محصول ویژه ذخیره نشد"
+
+#~ msgid "Brand"
+#~ msgstr "برند ( شاخه )"
+
+#~ msgid "Just use for breadcrumbs and mobile apps"
+#~ msgstr "فقط در ناوبری و نرم افزار موبایل کاربرد دارد"
+
+#~ msgid "Attributes"
+#~ msgstr "خواص"
+
+#~ msgid "List of attribute fields"
+#~ msgstr "فهرست خواص"
+
+#~ msgid "Attach"
+#~ msgstr "پیوست"
+
+#~ msgid "List"
+#~ msgstr "فهرست"
+
+#~ msgid "Special"
+#~ msgstr "ویژه"
+
+#~ msgid "Set information"
+#~ msgstr "تنظیم اطلاعات"
+
+#~ msgid "Dashboard"
+#~ msgstr "داشبرد"
+
+#~ msgid "Location data saved successfully."
+#~ msgstr "اطلاعات مکان با موفقیت ذخیره شد"
+
+#~ msgid "Location data not saved."
+#~ msgstr "اطلاعات مکان ذخیره نشد"
+
+#~ msgid "Add a location"
+#~ msgstr "مکان جدید"
+
+#~ msgid "Delivery data saved successfully."
+#~ msgstr "اطلاعات روش تحویل با موفقیت ذخیره شد"
+
+#~ msgid "Delivery data not saved."
+#~ msgstr "اطلاعات روش تحویل ذخیره نشد"
+
+#~ msgid "Add a delivery"
+#~ msgstr "روش تحویل جدید"
+
+#~ msgid "Go to filter"
+#~ msgstr "رفتن به فیلتر"
+
+#~ msgid "Not Finish"
+#~ msgstr "تکمیل نشده"
+
+#~ msgid "Update order"
+#~ msgstr "به روز رسانی سفارش"
+
+#~ msgid "Not Paid"
+#~ msgstr "پرداخت نشده"
+
+#~ msgid "Update payment"
+#~ msgstr "به روز رسانی پرداخت"
+
+#~ msgid "Not Delivery"
+#~ msgstr "تحویل نشده"
+
+#~ msgid "Update delivery"
+#~ msgstr "به روز رسانی تحویل"
+
+#~ msgid "Adapter"
+#~ msgstr "پایانه پرداخت"
+
+#~ msgid "Parent"
+#~ msgstr "والد"
+
+#~ msgid "Is active %s ?"
+#~ msgstr "%s فعال شود؟"
+
+#~ msgid "Time ( days )"
+#~ msgstr "زمان ( روز )"
+
+#~ msgid "First Name"
+#~ msgstr "نام"
+
+#~ msgid "Phone"
+#~ msgstr "تلفن"
+
+#~ msgid "Company"
+#~ msgstr "شرکت"
+
+#~ msgid "Address"
+#~ msgstr "آدرس"
+
+#~ msgid "Country"
+#~ msgstr "کشور"
+
+#~ msgid "City"
+#~ msgstr "شهر"
+
+#~ msgid "Zip code"
+#~ msgstr "کد پستی"
+
+#~ msgid "Location"
+#~ msgstr "انتخاب مکان"
+
+#~ msgid "Delivery"
+#~ msgstr "روش تحویل"
+
+#~ msgid "Packing"
+#~ msgstr "بسته بندی ؟"
+
+#~ msgid "Not processed"
+#~ msgstr "بررسی نشده"
+
+#~ msgid "Orders validated"
+#~ msgstr "سفارش های تایید شده"
+
+#~ msgid "Orders pending"
+#~ msgstr "سفارش های در انتظار تایید"
+
+#~ msgid "Orders failed"
+#~ msgstr "سفارش های خراب"
+
+#~ msgid "Orders cancelled"
+#~ msgstr "سفارش های لغو شده"
+
+#~ msgid "Fraudulent orders"
+#~ msgstr "سفارش های فریب آمیز"
+
+#~ msgid "Orders finished"
+#~ msgstr "سفارش های تکمیل شده"
+
+#~ msgid "Payment"
+#~ msgstr "پرداخت"
+
+#~ msgid "UnPaid"
+#~ msgstr "پرداخت نشده"
+
+#~ msgid "Paid"
+#~ msgstr "پرداخت شده"
+
+#~ msgid "Packed"
+#~ msgstr "بسته بندی شده"
+
+#~ msgid "Posted"
+#~ msgstr "ارسال شده"
+
+#~ msgid "Delivered"
+#~ msgstr "تحویل شده"
+
+#~ msgid "Back eaten"
+#~ msgstr "برگشت خورده"
+
+#~ msgid "Filter"
+#~ msgstr "فیلتر"
+
+#~ msgid "Update"
+#~ msgstr "به روز کردن"
+
+#~ msgid "Add Delivery methods"
+#~ msgstr " روش تحویل جدید"
+
+#~ msgid "List of Delivery methods"
+#~ msgstr "فهرست روش های تحویل"
+
+#~ msgid "Manage checkout options"
+#~ msgstr "مدیریت گزینه های سفارش"
+
+#~ msgid "On this part, you can manage checkout options, select payment method and add user location and delivery system, For manage this levels and options you can check and manage this parts"
+#~ msgstr "در این قسمت شما میتوانید گزینه های سفارش را مدیریت کنید، روش های پرداخت را انتخاب کنید و براساس آن مکان کاربر و روش تحویل را ایجاد کنید. برای مدیریت گزینه ها شما میتوانید قسمت های زیر را ویرایش کنید"
+
+#~ msgid "Check order settings on module configurations"
+#~ msgstr "بررسی تنظیمات سفارش گرفتن در ویژگی های ماژول"
+
+#~ msgid "Add delivery methods and select payment options for each method"
+#~ msgstr "اضافه کردن روش تحویل و انتخاب روش پرداخت برای هر روش تحویل"
+
+#~ msgid "Add locations and set delivery methods for each location"
+#~ msgstr "اضافه کردن محل و انتخابروش تحویل برای هر محل"
+
+#~ msgid "Add Location"
+#~ msgstr "مکان جدید"
+
+#~ msgid "List of Location"
+#~ msgstr "فهرست مکان ها"
+
+#~ msgid "Index"
+#~ msgstr "مقدمه"
+
+#~ msgid "Code"
+#~ msgstr "کد"
+
+#~ msgid "Customer"
+#~ msgstr "مشتری"
+
+#~ msgid "Total price"
+#~ msgstr "قیمت مجموع"
+
+#~ msgid "Details"
+#~ msgstr "جزئیات"
+
+#~ msgid "Order Name"
+#~ msgstr "نام سفارش دهنده"
+
+#~ msgid "User Name"
+#~ msgstr "نام کاربری"
+
+#~ msgid "Order Email"
+#~ msgstr "ایمیل سفارش دهنده"
+
+#~ msgid "Time create"
+#~ msgstr "زمان ایجاد"
+
+#~ msgid "Time finish"
+#~ msgstr "زمان اتمام"
+
+#~ msgid "Method"
+#~ msgstr "روش"
+
+#~ msgid "Shipping"
+#~ msgstr "فروش"
+
+#~ msgid "Print"
+#~ msgstr "پرینت"
+
+#~ msgid "Products"
+#~ msgstr "محصولات"
+
+#~ msgid "Current Price"
+#~ msgstr "قیمت فعلی"
+
+#~ msgid "Order price"
+#~ msgstr "قیمت در سفارش"
+
+#~ msgid "Order discount"
+#~ msgstr "تخفیف در سفارش"
+
+#~ msgid "Order number"
+#~ msgstr "تعداد سفارش"
+
+#~ msgid "Order total"
+#~ msgstr "مجموع قیمت سفارش"
+
+#~ msgid "Price : "
+#~ msgstr "قیمت : "
+
+#~ msgid "Time : "
+#~ msgstr "زمان : "
+
+#~ msgid "Days"
+#~ msgstr "روز"
+
+#~ msgid "View order"
+#~ msgstr "نمایش سفارش"
+
+#~ msgid "Extra fields"
+#~ msgstr "فیلد های اضافی"
+
+#~ msgid "Your cart is empty."
+#~ msgstr "سبد خرید شما خالی است"
+
+#~ msgid "Your order saved and we will call you soon"
+#~ msgstr "سفارش شما ثبت شد ، ما به زودی با شما تماس میگیریم"
+
+#~ msgid "Checkout data not saved."
+#~ msgstr "اطلاعات شما ذخیره نشد"
+
+#~ msgid "Checkout"
+#~ msgstr "مراحل سفارش"
+
+#~ msgid "You did not bought any products from us."
+#~ msgstr "شما هنوز هیچ محصولی از ما نخریده اید"
+
+#~ msgid "Review data saved successfully. And it show after admin review"
+#~ msgstr "بررسی تخصصی شما با موفقیت ذخیره شد، بعد از تایید مدیر در سایت نمایش داده می شود"
+
+#~ msgid "Review data not saved."
+#~ msgstr "بررسی تخصصی ذخیره نشد"
+
+#~ msgid "Review"
+#~ msgstr "بررسی تخصصی"
+
+#~ msgid "This product deleted"
+#~ msgstr "این محصول حذف شد"
+
+#~ msgid "Add Attribute"
+#~ msgstr "اضافه کردن خواص محصول"
+
+#~ msgid "This option ready on next version"
+#~ msgstr "این گزینه در نسخه بعدی آماده می شود"
+
+#~ msgid "Extra field data saved successfully."
+#~ msgstr "اطلاعات فیلد اضافی با موفقیت ذخیره شد"
+
+#~ msgid "Extra field data not saved."
+#~ msgstr "اطلاعات فیلد اضافه ذخیره نشد"
+
+#~ msgid "Add Extra"
+#~ msgstr "فیلد جدید"
+
+#~ msgid "Select product for manage review."
+#~ msgstr "انتخاب محصول برای مدیریت بررسی ها تخصصی"
+
+#~ msgid "Review data saved successfully."
+#~ msgstr "بررسی تخصصی با موفقیت اضافه شد"
+
+#~ msgid "Official review"
+#~ msgstr "بررسی تخصصی رسمی"
+
+#~ msgid "User review"
+#~ msgstr "بررسی تخصصی کاربران"
+
+#~ msgid "By"
+#~ msgstr "به وسیله"
+
+#~ msgid "On"
+#~ msgstr "در"
+
+#~ msgid "Add review"
+#~ msgstr "درج بررسی تخصصی"
+
+#~ msgid "Are you sure to delete this product from your cart? "
+#~ msgstr "آیا اطمینان دارید که میخواهید این محصول را از سبد خرید حذف کنید؟"
+
+#~ msgid "Reviews from %s"
+#~ msgstr "بررسی های تخصصی از %s"
+
+#~ msgid "Add official review"
+#~ msgstr "بررسی تخصصی رسمی جدید"
+
+#~ msgid "Official Review"
+#~ msgstr "بررسی تخصصی رسمی"
+
+#~ msgid "Active"
+#~ msgstr "فعال"
+
+#~ msgid "Inactive"
+#~ msgstr "غیرفعال"
+
+#~ msgid "All Reviews"
+#~ msgstr "همه بررسی های تخصصی"
+
+#~ msgid "Extra"
+#~ msgstr "فیلد اضافی"
+
+#~ msgid "List of extra fields"
+#~ msgstr "فهرست فیلد های اضافی"
+
+#~ msgid "This review added by %s"
+#~ msgstr "این بررسی تخصصی به وسیله %s اضافه شده است"
+
+#~ msgid "All pending review"
+#~ msgstr "همه بررسی های در انتظار تایید"
+
+#~ msgid "No file attached"
+#~ msgstr "هیچ فایلی پیوست نشده است"
+
+#~ msgid "Logs"
+#~ msgstr "گزارشات"
+
+#~ msgid "Shop"
+#~ msgstr "فروشگاه"
+
+#~ msgid "Shop module for pi."
+#~ msgstr "سیستم فروشگاه"
+
+#~ msgid "Admin"
+#~ msgstr "مدیریت"
+
+#~ msgid "Social"
+#~ msgstr "شبکه های اجتماعی"
+
+#~ msgid "Vote"
+#~ msgstr "رای"
+
+#~ msgid "Favourite"
+#~ msgstr "مورد علاقه"
+
+#~ msgid "Texts"
+#~ msgstr "متن ها"
+
+#~ msgid "Perpage"
+#~ msgstr "تعداد در هر صفحه"
+
+#~ msgid "Show related products"
+#~ msgstr "نمایش محصولات مشابه"
+
+#~ msgid "Show extra fields"
+#~ msgstr "نمایش فیلد های اضافی"
+
+#~ msgid "Show product attacehed files"
+#~ msgstr "نمایش فایل های پیوست شده"
+
+#~ msgid "Show product price"
+#~ msgstr "نمایش قیمت محصول"
+
+#~ msgid "Show official review"
+#~ msgstr "نمایش بررسی تخصصی رسمی"
+
+#~ msgid "Show user review"
+#~ msgstr "نمایش بررسی تخصصی کاربران"
+
+#~ msgid "Show submit review"
+#~ msgstr "نمایش دکمه ارسال بررسی تخصصی"
+
+#~ msgid "Show special"
+#~ msgstr "نمایش محصولات ویژه"
+
+#~ msgid "Number of products on special"
+#~ msgstr "تعداد محصولات ویژه"
+
+#~ msgid "Volume"
+#~ msgstr "حجم"
+
+#~ msgid "Show stock count"
+#~ msgstr "نمایش تعداد موجودی"
+
+#~ msgid "Show Tags"
+#~ msgstr "نمایش برچسب ها"
+
+#~ msgid "Image Size"
+#~ msgstr "حجم تصویر"
+
+#~ msgid "Image path"
+#~ msgstr "مسیر ذخیره تصویر"
+
+#~ msgid "Image Extension"
+#~ msgstr "پسوند های مجار برای تصویر"
+
+#~ msgid "Large Image height"
+#~ msgstr "ارتفاع تصویر بزرگ"
+
+#~ msgid "Large Image width"
+#~ msgstr "عرض تصویر بزرگ"
+
+#~ msgid "Medium Image height"
+#~ msgstr "ارتفاع تصویر متوسط"
+
+#~ msgid "Medium Image width"
+#~ msgstr "عرض تصویر متوسط"
+
+#~ msgid "Thumb Image height"
+#~ msgstr "ارتفاع تصویر بندانگشتی"
+
+#~ msgid "Thumb Image width"
+#~ msgstr "عرض تصویر بندانگشتی"
+
+#~ msgid "Use lightbox"
+#~ msgstr "استفاده از لایت باکس"
+
+#~ msgid "Add Watermark"
+#~ msgstr "اضافه کردن واترمارک به تصویر"
+
+#~ msgid "Watermark Image"
+#~ msgstr "تصویر واترمارک"
+
+#~ msgid "Watermark Positio"
+#~ msgstr "موقعیت واترمارک"
+
+#~ msgid "Top Left"
+#~ msgstr "بالا چپ"
+
+#~ msgid "Top Right"
+#~ msgstr "بالا راست"
+
+#~ msgid "Bottom Left"
+#~ msgstr "پایین چپ"
+
+#~ msgid "Bottom Right"
+#~ msgstr "پایین راست"
+
+#~ msgid "Show Google Plus"
+#~ msgstr "نمایش گوگل پلاس"
+
+#~ msgid "Show facebook"
+#~ msgstr "نمایش فیسبوک"
+
+#~ msgid "Show Twitter"
+#~ msgstr "نمایش تویتر"
+
+#~ msgid "File Size"
+#~ msgstr "حجم فایل"
+
+#~ msgid "File path"
+#~ msgstr "مسیر ذخیره فایل"
+
+#~ msgid "File Extension"
+#~ msgstr "پسوند های مجار برای فایل"
+
+#~ msgid "Use vote system"
+#~ msgstr "استفاده از سیستم رای"
+
+#~ msgid "Use favourite system"
+#~ msgstr "استفاده از سیستم مورد علاقه"
+
+#~ msgid "Show search type"
+#~ msgstr "نمایش نوع جستجوی عنوان"
+
+#~ msgid "Show search price"
+#~ msgstr "نمایش قیمت در جستجو"
+
+#~ msgid "Show search category"
+#~ msgstr "نمایش شاخه در جستجو"
+
+#~ msgid "Order method"
+#~ msgstr "روش سفارش"
+
+#~ msgid "Code Prefix"
+#~ msgstr "پیشوند کد"
+
+#~ msgid "List of mails for send order notification"
+#~ msgstr "فهرست ایمیل هایی که آگاهی رسانی ثبت سفارش به آنها انجام شود"
+
+#~ msgid "Use `|` as delimiter to separate mails"
+#~ msgstr "از `|` برای جداسازی ایمیل های استفاده کنید"
+
+#~ msgid "Show name"
+#~ msgstr "نمایش نام"
+
+#~ msgid "Show email"
+#~ msgstr "نمایش ایمیل"
+
+#~ msgid "Show phone"
+#~ msgstr "نمایش تلفن"
+
+#~ msgid "Show mobile"
+#~ msgstr "نمایش موبایل"
+
+#~ msgid "Show company"
+#~ msgstr "نمایش شرکت"
+
+#~ msgid "Show address"
+#~ msgstr "نمایش آدرس"
+
+#~ msgid "Show country"
+#~ msgstr "نمایش کشور"
+
+#~ msgid "Show city"
+#~ msgstr "نمایش شهر"
+
+#~ msgid "Show Zip code"
+#~ msgstr "نمایش کد پستی"
+
+#~ msgid "Show packing"
+#~ msgstr "نمایش بسته بندی"
+
+#~ msgid "Show location"
+#~ msgstr "انتخاب محل"
+
+#~ msgid "Show delivery"
+#~ msgstr "انتخاب روش تحویل"
+
+#~ msgid "Show payment"
+#~ msgstr "انتخاب روش پرداخت"
+
+#~ msgid "Module main title"
+#~ msgstr "عنوان اصلی ماژول"
+
+#~ msgid "Title for main page and all non-title pages"
+#~ msgstr "عنوان برای صفحه اصلی و تمام صفحات بدون عنوان"
+
+#~ msgid "Module main description"
+#~ msgstr "توضیحات اصلی ماژول"
+
+#~ msgid "Module main keywords"
+#~ msgstr "کلمات کلیدی اصلی ماژول"
+
+#~ msgid "Module search page title"
+#~ msgstr "عنوان صفحه جستجو ماژول"
+
+#~ msgid "Module search page description"
+#~ msgstr "توضیحات صفحه جستجو ماژول"
+
+#~ msgid "Module search page keywords"
+#~ msgstr "کلمات کلیدی صفحه جستجو ماژول"
+
+#~ msgid "Attached video"
+#~ msgstr "ویدیو های پیوست شده"
+
+#~ msgid "Attached audio"
+#~ msgstr "صدا های پیوست شده"
+
+#~ msgid "Attached images"
+#~ msgstr "تصاویر پیوست شده"
+
+#~ msgid "Show price"
+#~ msgstr "نمایش قیمت"
+
+#~ msgid "Show More link to module page"
+#~ msgstr "نمایش لینک ادامه به صفحه ماژول"
+
+#~ msgid "Set More link to module page"
+#~ msgstr "درج لینک ادامه به صفحه ماژول"
+
+#~ msgid "Simple list"
+#~ msgstr "فهرست ساده"
+
+#~ msgid "Advanced list"
+#~ msgstr "فهرست کامل"

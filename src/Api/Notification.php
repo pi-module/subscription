@@ -49,6 +49,7 @@ class Notification extends AbstractApi
             'title' => $campaign['title'],
             'extra' => $campaign['text_main'],
             'time' => _date($people['time_join']),
+            'site_name' => $siteName,
         );
 
         // Send mail to admin
