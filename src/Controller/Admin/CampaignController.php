@@ -192,7 +192,7 @@ class CampaignController extends ActionController
             $campaign->image = '';
             $campaign->path = '';
             // Save
-            if ($ccampaign->save()) {
+            if ($campaign->save()) {
                 $message = sprintf(__('Image of %s removed'), $campaign->title);
                 $status = 1;
             } else {
