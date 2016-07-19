@@ -110,7 +110,7 @@ class CampaignController extends ActionController
                     $values['path'] = sprintf('%s/%s', date('Y'), date('m'));
                     $originalPath = Pi::path(sprintf('upload/%s/original/%s', $this->config('image_path'), $values['path']));
                     // Image name
-                    $imageName = Pi::api('image', 'video')->rename($file['image']['name'], $this->ImageCampaignPrefix, $values['path']);
+                    $imageName = Pi::api('image', 'subscription')->rename($file['image']['name'], $this->ImageCampaignPrefix, $values['path']);
                     // Upload
                     $uploader = new Upload;
                     $uploader->setDestination($originalPath);
@@ -122,7 +122,7 @@ class CampaignController extends ActionController
                         // Get image name
                         $values['image'] = $uploader->getUploaded('image');
                         // process image
-                        Pi::api('image', 'video')->process($values['image'], $values['path']);
+                        Pi::api('image', 'subscription')->process($values['image'], $values['path']);
                     } else {
                         $this->jump(array('action' => 'update'), __('Problem in upload image. please try again'));
                     }

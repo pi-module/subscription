@@ -28,9 +28,8 @@ class IndexController extends ActionController
         $config = Pi::service('registry')->config->read($module);
         // Get campaign
         if (isset($slug) && !empty($slug)) {
-            $campaign = $this->getModel('campaign')->find($slug, 'slug');
+            $campaign = Pi::api('campaign', 'subscription')->getCampaign($slug, 'slug');
             if (!empty($campaign)) {
-                $campaign = $campaign->toArray();
                 if ($campaign['status'] != 1 || $campaign['time_start'] > time() || $campaign['time_end'] < time()) {
                     $this->getResponse()->setStatusCode(404);
                     $this->terminate(__('The campaign not found.'), '', 'error-404');
@@ -117,6 +116,15 @@ class IndexController extends ActionController
             $form->setData($subscription);
         }
         // Set view
+        if (isset($campaign['seo_title'])) {
+            $this->view()->headTitle($campaign['seo_title']);
+        }
+        if (isset($campaign['seo_description'])) {
+            $this->view()->headDescription($campaign['seo_description'], 'set');
+        }
+        if (isset($campaign['seo_keywords'])) {
+            $this->view()->headKeywords($campaign['seo_keywords'], 'set');
+        }
         $this->view()->setTemplate('subscription');
         $this->view()->assign('config', $config);
         $this->view()->assign('campaign', $campaign);
@@ -143,8 +151,7 @@ class IndexController extends ActionController
         // Find campin and people
         $people = $this->getModel('people')->find($information['people']);
         if ($information['campaign'] > 0) {
-            $campaign = $this->getModel('campaign')->find($information['campaign']);
-            $campaign = $campaign->toArray();
+            $campaign = Pi::api('campaign', 'subscription')->getCampaign($information['campaign']);
         } else {
             $campaign = array();
             $campaign['id'] = 0;
@@ -156,6 +163,15 @@ class IndexController extends ActionController
             $campaign['subscription_type'] = $config['default_subscription_type'];
         }
         // Set view
+        if (isset($campaign['seo_title'])) {
+            $this->view()->headTitle($campaign['seo_title']);
+        }
+        if (isset($campaign['seo_description'])) {
+            $this->view()->headDescription($campaign['seo_description'], 'set');
+        }
+        if (isset($campaign['seo_keywords'])) {
+            $this->view()->headKeywords($campaign['seo_keywords'], 'set');
+        }
         $this->view()->setTemplate('finish');
         $this->view()->assign('config', $config);
         $this->view()->assign('people', $people);
