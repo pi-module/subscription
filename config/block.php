@@ -18,12 +18,19 @@ return array(
         'render' => array('block', 'subscription'),
         'template' => 'subscription',
         'config' => array(
-            'campaign' => array(
-                'title' => _a('Campaign'),
+            'subscription_name' => array(
+                'title' => _a('Show name on subscription'),
                 'description' => '',
-                'edit' => 'Module\Subscription\Form\Element\Campaign',
-                'filter' => 'string',
-                'value' => 0,
+                'edit' => 'checkbox',
+                'filter' => 'number_int',
+                'value' => 1,
+            ),
+            'subscription_mobile' => array(
+                'title' => _a('Show mobile on subscription'),
+                'description' => '',
+                'edit' => 'checkbox',
+                'filter' => 'number_int',
+                'value' => 1,
             ),
         ),
     ),

@@ -31,9 +31,5 @@ return array(
             'title' => _a('Campaign'),
             'access' => array(),
         ),
-        'tools' => array(
-            'title' => _a('Tools'),
-            'access' => array(),
-        ),
     ),
 );

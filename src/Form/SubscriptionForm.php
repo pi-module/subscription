@@ -33,37 +33,47 @@ class SubscriptionForm extends BaseForm
 
     public function init()
     {
-        // id
-        $this->add(array(
-            'name' => 'id',
-            'attributes' => array(
-                'type' => 'hidden',
-            ),
-        ));
         // first_name
-        $this->add(array(
-            'name' => 'first_name',
-            'options' => array(
-                'label' => __('First name'),
-            ),
-            'attributes' => array(
-                'type' => 'text',
-                'description' => '',
-                'required' => true,
-            )
-        ));
-        // last_name
-        $this->add(array(
-            'name' => 'last_name',
-            'options' => array(
-                'label' => __('Last name'),
-            ),
-            'attributes' => array(
-                'type' => 'text',
-                'description' => '',
-                'required' => true,
-            )
-        ));
+        if ($this->option['config']['subscription_name']) {
+            $this->add(array(
+                'name' => 'first_name',
+                'options' => array(
+                    'label' => __('First name'),
+                ),
+                'attributes' => array(
+                    'type' => 'text',
+                    'description' => '',
+                    'required' => true,
+                    'placeholder' => __('First name'),
+                )
+            ));
+            // last_name
+            $this->add(array(
+                'name' => 'last_name',
+                'options' => array(
+                    'label' => __('Last name'),
+                ),
+                'attributes' => array(
+                    'type' => 'text',
+                    'description' => '',
+                    'required' => true,
+                    'placeholder' => __('Last name'),
+                )
+            ));
+        } else {
+            $this->add(array(
+                'name' => 'first_name',
+                'attributes' => array(
+                    'type' => 'hidden',
+                ),
+            ));
+            $this->add(array(
+                'name' => 'last_name',
+                'attributes' => array(
+                    'type' => 'hidden',
+                ),
+            ));
+        }
         // email
         $this->add(array(
             'name' => 'email',
@@ -74,21 +84,24 @@ class SubscriptionForm extends BaseForm
                 'type' => 'text',
                 'description' => '',
                 'required' => (in_array($this->option['type'], array('both', 'email'))) ? true : false,
+                'placeholder' => __('Email'),
             )
         ));
         // mobile
-        $this->add(array(
-            'name' => 'mobile',
-            'options' => array(
-                'label' => __('Mobile'),
-            ),
-            'attributes' => array(
-                'type' => 'text',
-                'description' => '',
-                'required' => (in_array($this->option['type'], array('both', 'mobile'))) ? true : false,
-            )
-        ));
-
+        if ($this->option['config']['subscription_mobile']) {
+            $this->add(array(
+                'name' => 'mobile',
+                'options' => array(
+                    'label' => __('Mobile'),
+                ),
+                'attributes' => array(
+                    'type' => 'text',
+                    'description' => '',
+                    'required' => (in_array($this->option['type'], array('both', 'mobile'))) ? true : false,
+                    'placeholder' => __('Mobile'),
+                )
+            ));
+        }
         // Save
         $this->add(array(
             'name' => 'submit',

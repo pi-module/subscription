@@ -18,6 +18,10 @@ return array(
             'name' => 'admin'
         ),
         array(
+            'title' => _a('Subscription form'),
+            'name' => 'subscription'
+        ),
+        array(
             'title' => _a('Default campaign'),
             'name' => 'campaign'
         ),
@@ -41,7 +45,24 @@ return array(
             'filter' => 'number_int',
             'value' => 25
         ),
-        // Text
+        // Subscription
+        'subscription_name' => array(
+            'category' => 'subscription',
+            'title' => _a('Show name on subscription'),
+            'description' => '',
+            'edit' => 'checkbox',
+            'filter' => 'number_int',
+            'value' => 1
+        ),
+        'subscription_mobile' => array(
+            'category' => 'subscription',
+            'title' => _a('Show mobile on subscription'),
+            'description' => '',
+            'edit' => 'checkbox',
+            'filter' => 'number_int',
+            'value' => 1
+        ),
+        // Campaign
         'default_title' => array(
             'category' => 'campaign',
             'title' => _a('Default title'),

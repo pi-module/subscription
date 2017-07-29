@@ -63,6 +63,7 @@ class IndexController extends ActionController
         $option = array(
             'type' => $campaign['subscription_type'],
             'uid' => $uid,
+            'config' => $config,
         );
         // Set form
         $form = new SubscriptionForm('subscription', $option);

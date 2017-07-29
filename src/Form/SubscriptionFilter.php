@@ -22,7 +22,7 @@ class SubscriptionFilter extends InputFilter
         // first_name
         $this->add(array(
             'name' => 'first_name',
-            'required' => true,
+            'required' => $option['config']['subscription_name'] ? true : false,
             'filters' => array(
                 array(
                     'name' => 'StringTrim',
@@ -32,7 +32,7 @@ class SubscriptionFilter extends InputFilter
         // last_name
         $this->add(array(
             'name' => 'last_name',
-            'required' => true,
+            'required' => $option['config']['subscription_name'] ? true : false,
             'filters' => array(
                 array(
                     'name' => 'StringTrim',
@@ -56,20 +56,22 @@ class SubscriptionFilter extends InputFilter
             ),
         ));
         // mobile
-        $this->add(array(
-            'name' => 'mobile',
-            'required' => (in_array($option['type'], array('both', 'mobile'))) ? true : false,
-            'filters' => array(
-                array(
-                    'name' => 'StringTrim',
+        if ($option['config']['subscription_mobile']) {
+            $this->add(array(
+                'name' => 'mobile',
+                'required' => (in_array($option['type'], array('both', 'mobile'))) ? true : false,
+                'filters' => array(
+                    array(
+                        'name' => 'StringTrim',
+                    ),
                 ),
-            ),
-            'validators'    => array(
-                new \Module\Subscription\Validator\MobileDuplicate(array(
-                    'module'            => Pi::service('module')->current(),
-                    'table'             => 'people',
-                )),
-            ),
-        ));
+                'validators'    => array(
+                    new \Module\Subscription\Validator\MobileDuplicate(array(
+                        'module'            => Pi::service('module')->current(),
+                        'table'             => 'people',
+                    )),
+                ),
+            ));
+        }
     }
 }

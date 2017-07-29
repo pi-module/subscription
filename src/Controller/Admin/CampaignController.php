@@ -19,6 +19,7 @@ use Pi\Paginator\Paginator;
 use Pi\File\Transfer\Upload;
 use Module\Subscription\Form\CampaignForm;
 use Module\Subscription\Form\CampaignFilter;
+use Zend\Db\Sql\Predicate\Expression;
 
 class CampaignController extends ActionController
 {
@@ -48,12 +49,8 @@ class CampaignController extends ActionController
                 _date($row->time_end));
             $list[$row->id]['isExpire'] = (time() > $row->time_end) ? 1 : 0;
         }
-        // Go to update page if empty
-        if (empty($list)) {
-            return $this->redirect()->toRoute('', array('action' => 'update'));
-        }
         // Set paginator
-        $count = array('count' => new \Zend\Db\Sql\Predicate\Expression('count(*)'));
+        $count = array('count' => new Expression('count(*)'));
         $select = $this->getModel('campaign')->select()->columns($count);
         $count = $this->getModel('campaign')->selectWith($select)->current()->count;
         $paginator = Paginator::factory(intval($count));

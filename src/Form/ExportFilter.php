@@ -10,15 +10,19 @@
 /**
  * @author Hossein Azizabadi <azizabadi@faragostaresh.com>
  */
-namespace Module\Subscription\Controller\Admin;
+namespace Module\Subscription\Form;
 
 use Pi;
-use Pi\Mvc\Controller\ActionController;
+use Zend\InputFilter\InputFilter;
 
-class ToolsController extends ActionController
+class ExportFilter extends InputFilter
 {
-    public function indexAction()
+    public function __construct($option)
     {
-
+        // include_user
+        $this->add(array(
+            'name' => 'include_user',
+            'required' => false,
+        ));
     }
 }

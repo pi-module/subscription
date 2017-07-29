@@ -23,11 +23,6 @@ return array(
             'controller' => 'campaign',
             'permission' => 'campaign',
         ),
-        array(
-            'label' => _a('Tools'),
-            'controller' => 'tools',
-            'permission' => 'tools',
-        ),
     ),
     // Front section
     'front' => array(

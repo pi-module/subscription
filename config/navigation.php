@@ -22,6 +22,29 @@ return array(
             'module' => 'subscription',
             'controller' => 'people',
             'action' => 'index',
+
+            'pages' => array(
+                'people' => array(
+                    'label' => _a('People'),
+                    'permission' => array(
+                        'resource' => 'people',
+                    ),
+                    'route' => 'admin',
+                    'module' => 'subscription',
+                    'controller' => 'people',
+                    'action' => 'index',
+                ),
+                'export' => array(
+                    'label' => _a('Export csv'),
+                    'permission' => array(
+                        'resource' => 'people',
+                    ),
+                    'route' => 'admin',
+                    'module' => 'subscription',
+                    'controller' => 'people',
+                    'action' => 'export',
+                ),
+            ),
         ),
 
         'campaign' => array(
@@ -33,17 +56,29 @@ return array(
             'module' => 'subscription',
             'controller' => 'campaign',
             'action' => 'index',
-        ),
 
-        'tools' => array(
-            'label' => _a('Tools'),
-            'permission' => array(
-                'resource' => 'tools',
+            'pages' => array(
+                'campaign' => array(
+                    'label' => _a('Campaign'),
+                    'permission' => array(
+                        'resource' => 'campaign',
+                    ),
+                    'route' => 'admin',
+                    'module' => 'subscription',
+                    'controller' => 'campaign',
+                    'action' => 'index',
+                ),
+                'update' => array(
+                    'label' => _a('New campaign'),
+                    'permission' => array(
+                        'resource' => 'campaign',
+                    ),
+                    'route' => 'admin',
+                    'module' => 'subscription',
+                    'controller' => 'campaign',
+                    'action' => 'update',
+                ),
             ),
-            'route' => 'admin',
-            'module' => 'subscription',
-            'controller' => 'tools',
-            'action' => 'index',
         ),
     ),
 );

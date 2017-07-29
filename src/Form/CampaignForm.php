@@ -139,7 +139,7 @@ class CampaignForm extends BaseForm
             'name' => 'subscription_type',
             'type' => 'select',
             'options' => array(
-                'label' => __('Status'),
+                'label' => __('Subscription type'),
                 'value_options' => array(
                     'email' => __('Email'),
                     'sms' => __('Sms'),
