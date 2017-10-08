@@ -23,6 +23,9 @@ class Block
         $block = array();
         $block = array_merge($block, $options);
 
+        // Load language
+        Pi::service('i18n')->load(array('module/subscription', 'default'));
+
         // Get config
         $block['config'] = Pi::service('registry')->config->read($module);
 
@@ -64,9 +67,6 @@ class Block
         ))));
         $form->setData($subscription);
         $block['form'] = $form;
-
-        // Load language
-        Pi::service('i18n')->load(array('module/subscription', 'default'));
 
         return $block;
     }
