@@ -78,12 +78,8 @@ class IndexController extends ActionController
                 $values['campaign'] = $campaign['id'];
                 $values['uid'] = $uid;
                 $values['status'] = 1;
-                $values['time_join'] = time();
-                $values['newsletter'] = 1;
-                // Save
-                $people = $this->getModel('people')->createRow();
-                $people->assign($values);
-                $people->save();
+                $people = Pi::api('people', 'subscription')->createPeople($values);   
+                
                 $people = $people->toArray();
                 // Send notification
                 Pi::api('notification', 'subscription')->joinUser($people, $campaign);

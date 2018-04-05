@@ -89,7 +89,7 @@ class PeopleController extends ActionController
         if ($this->request->isPost()) {
             $data = $this->request->getPost();
             $form = new ExportForm('export');
-            $form->setInputFilter(new ExportFilter());
+            $form->setInputFilter(new ExportFilter(array()));
             $form->setData($data);
             if ($form->isValid()) {
                 $values = $form->getData();
