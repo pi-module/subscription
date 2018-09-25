@@ -15,7 +15,7 @@ return array(
     'meta' => array(
         'title' => _a('Subscription'),
         'description' => _a('Subscribe to Newsletter and website campaign'),
-        'version' => '0.1.0',
+        'version' => '0.2.0',
         'license' => 'New BSD',
         'logo' => 'image/logo.png',
         'readme' => 'docs/readme.txt',

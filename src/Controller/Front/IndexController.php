@@ -26,6 +26,10 @@ class IndexController extends ActionController
         $slug = $this->params('slug');
         // Get config
         $config = Pi::service('registry')->config->read($module);
+        if (!$config['subscription_enabled']) {
+            $this->getResponse()->setStatusCode(404);
+            $this->view()->setLayout('layout-simple');
+        }
         // Get campaign
         if (isset($slug) && !empty($slug)) {
             $campaign = Pi::api('campaign', 'subscription')->getCampaign($slug, 'slug');

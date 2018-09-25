@@ -23,14 +23,6 @@ class SubscriptionForm extends BaseForm
         parent::__construct($name);
     }
 
-    public function getInputFilter()
-    {
-        if (!$this->filter) {
-            $this->filter = new SubscriptionFilter($this->option);
-        }
-        return $this->filter;
-    }
-
     public function init()
     {
         // first_name
@@ -102,6 +94,15 @@ class SubscriptionForm extends BaseForm
                 )
             ));
         }
+        
+        if ($captchaElement = Pi::service('form')->getReCaptcha(1)) {
+            $this->add($captchaElement);
+        }
+        $this->add([
+            'name' => 'security',
+            'type' => 'csrf',
+        ]);
+        
         // Save
         $this->add(array(
             'name' => 'submit',
