@@ -95,7 +95,7 @@ class SubscriptionForm extends BaseForm
             ));
         }
         
-        if ($captchaElement = Pi::service('form')->getReCaptcha(1)) {
+        if ($captchaElement = Pi::service('form')->getReCaptcha(2)) {
             $this->add($captchaElement);
         }
         $this->add([

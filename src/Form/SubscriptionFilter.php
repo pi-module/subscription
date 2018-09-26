@@ -53,6 +53,11 @@ class SubscriptionFilter extends InputFilter
                     'module'            => Pi::service('module')->current(),
                     'table'             => 'people',
                 )),
+                array(
+                    'name'    => 'EmailAddress',
+                    'options' => $params,
+                ),
+
             ),
         ));
         // mobile

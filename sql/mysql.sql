@@ -11,7 +11,6 @@ CREATE TABLE `{people}` (
   `newsletter` TINYINT(1) UNSIGNED NOT NULL DEFAULT '0',
   PRIMARY KEY (`id`),
   UNIQUE KEY `email` (`email`),
-  UNIQUE KEY `mobile` (`mobile`),
   KEY `campaign` (`campaign`),
   KEY `uid` (`uid`),
   KEY `status` (`status`),

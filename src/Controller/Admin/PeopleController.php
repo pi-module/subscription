@@ -141,6 +141,20 @@ class PeopleController extends ActionController
                 //$select->where($whereUser);
                 $rowset = Pi::Model('user_account')->selectWith($select);
 
+                // Set key
+                if ($complete == 0) {
+                    $keys = array(
+                        'uid',
+                        'status',
+                        'email',
+                        'first_name',
+                        'last_name',
+                        'mobile',
+                        'time_join',
+                        'newsletter'
+                    );
+                    Pi::service('audit')->log('subscription-export', $keys);
+                }
 
                 // Make list
                 foreach ($rowset as $row) {
@@ -149,12 +163,13 @@ class PeopleController extends ActionController
                     // Set to csv
                     Pi::service('audit')->log('subscription-export', array(
                         'uid'  => $user['id'],
-                        'status' => $people['status'],
+                        'status' => $people['status'] ? __('Enabled') : __('Disabled'),
                         'email' => $user['email'],
                         'first_name' => !empty($user['first_name']) ? $user['first_name'] : $user['name'],
                         'last_name' => !empty($user['last_name']) ? $user['last_name'] : '',
                         'mobile' => $user['mobile'],
                         'time_join' => _date($people['time_join']) . date(' H:i', $people['time_join']),
+                        'newsletter' => $people['newsletter']
                     ));
 
                     // Set extra
@@ -181,6 +196,7 @@ class PeopleController extends ActionController
                             'last_name',
                             'mobile',
                             'time_join',
+                            'newsletter'
                         );
                         Pi::service('audit')->log('subscription-export', $keys);
                     }
@@ -188,12 +204,13 @@ class PeopleController extends ActionController
                     // Set to csv
                     Pi::service('audit')->log('subscription-export', array(
                         'uid'  => $people['uid'],
-                        'status' => $people['status'],
+                        'status' => $people['status'] ? __('Enabled') : __('Disabled'),
                         'email' => $people['email'],
                         'first_name' => $people['first_name'],
                         'last_name' => $people['last_name'],
                         'mobile' => $people['mobile'],
                         'time_join' => _date($people['time_join']) . date(' H:i', $people['time_join']),
+                        'newsletter' => $people['newsletter']
                     ));
 
                     // Set extra
