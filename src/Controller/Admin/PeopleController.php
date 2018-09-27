@@ -119,27 +119,39 @@ class PeopleController extends ActionController
             $order = array('id ASC');
             $whereUser = array();
             $whereUser['id > ?'] = $start;
-            $whereUser['active'] = 1;
             $wherePeople = array();
             $wherePeople['id > ?'] = $start;
-            if ($includeUser) {
-                $wherePeople['uid'] = 0;
+
+            // Get count
+            if (!$count) {
+                $columns = array('count' => new Expression('count(*)'));
+                if ($includeUser) {
+                    $select = Pi::Model('user_account')->select()->columns($columns)->where($whereUser);
+                    $count = Pi::Model('user_account')->selectWith($select)->current()->count + $count;
+                } else {
+                    $select = $this->getModel('people')->select()->columns($columns)->where($wherePeople);
+                    $count = $this->getModel('people')->selectWith($select)->current()->count;
+                }
             }
 
-            if ($startUser == 1) {
+            if ($includeUser) {
                 // Get from system user table
+                $peopleTable = Pi::model('people', 'subscription')->getTable();
                 $accountTable = Pi::model('user_account')->getTable();
                 $profileTable = Pi::model('profile', 'user')->getTable();
                 $select = Pi::db()->select();
-                $select->from(array('user' => $accountTable));
-                $select->join(array('profile' => $profileTable), 'user.id = profile.uid', array(
-                    'first_name' => 'first_name',
-                    'last_name' => 'last_name',
-                    'mobile' => 'mobile',
-                ));
 
-                //$select->where($whereUser);
-                $rowset = Pi::Model('user_account')->selectWith($select);
+
+                $select->from(array('user' => $accountTable))
+                    ->join(array('profile' => $profileTable), 'user.id = profile.uid', array(
+                        'first_name' => 'first_name',
+                        'last_name' => 'last_name',
+                        'mobile' => 'mobile',
+                    ), 'left')
+                    ->join(array('people' => $peopleTable), 'people.uid = user.id', array('newsletter', 'time_join'), 'left');
+
+
+                $rowset = Pi::db()->query($select);
 
                 // Set key
                 if ($complete == 0) {
@@ -157,19 +169,18 @@ class PeopleController extends ActionController
                 }
 
                 // Make list
-                foreach ($rowset as $row) {
-                    $user = $row->toArray();
+                foreach ($rowset as $user) {
 
                     // Set to csv
                     Pi::service('audit')->log('subscription-export', array(
                         'uid'  => $user['id'],
-                        'status' => $people['status'] ? __('Enabled') : __('Disabled'),
+                        'status' => $user['active'] ? __('Enabled') : __('Disabled'),
                         'email' => $user['email'],
                         'first_name' => !empty($user['first_name']) ? $user['first_name'] : $user['name'],
                         'last_name' => !empty($user['last_name']) ? $user['last_name'] : '',
                         'mobile' => $user['mobile'],
-                        'time_join' => _date($people['time_join']) . date(' H:i', $people['time_join']),
-                        'newsletter' => $people['newsletter']
+                        'time_join' => $user['time_join'] ? (_date($user['time_join']) . date(' H:i', $user['time_join'])) : null,
+                        'newsletter' => $user['newsletter'] ? $user['newsletter'] : 0
                     ));
 
                     // Set extra
@@ -223,18 +234,7 @@ class PeopleController extends ActionController
                 }
             }
 
-            // Get count
-            if (!$count) {
-                $columns = array('count' => new Expression('count(*)'));
-                $select = $this->getModel('people')->select()->columns($columns)->where($wherePeople);
-                $count = $this->getModel('people')->selectWith($select)->current()->count;
 
-                if ($includeUser) {
-                    $columns = array('count' => new Expression('count(*)'));
-                    $select = Pi::Model('user_account')->select()->columns($columns)->where($whereUser);
-                    $count = Pi::Model('user_account')->selectWith($select)->current()->count + $count;
-                }
-            }
 
             // Set complete
             $percent = (100 * $complete) / $count;
