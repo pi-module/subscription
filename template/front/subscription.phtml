@@ -5,7 +5,7 @@
             <h1 class="p-name" itemprop="name"><?php echo $this->escape($campaign['title']); ?></h1>
         </div>
         <div class="campaign-width-image">
-            <img class="img-responsive" itemprop="image" src="<?php echo $campaign['largeUrl']; ?>"
+            <img class="img-fluid" itemprop="image" src="<?php echo $campaign['largeUrl']; ?>"
                  alt="<?php echo $this->escape($campaign['title']); ?>">
         </div>
     <?php } else { ?>
