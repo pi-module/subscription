@@ -4,6 +4,7 @@ CREATE TABLE `{people}` (
   `uid`        INT(10) UNSIGNED    NOT NULL DEFAULT '0',
   `status`     TINYINT(1) UNSIGNED NOT NULL DEFAULT '0',
   `time_join`  INT(10) UNSIGNED    NOT NULL DEFAULT '0',
+  `time_update`  INT(10) UNSIGNED  NOT NULL DEFAULT '0',
   `first_name` VARCHAR(255)        NOT NULL DEFAULT '',
   `last_name`  VARCHAR(255)        NOT NULL DEFAULT '',
   `email`      VARCHAR(64)                  DEFAULT NULL,

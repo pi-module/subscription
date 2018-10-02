@@ -22,8 +22,9 @@ class People extends AbstractApi
     {
         $peopleModel = Pi::model('people', 'subscription');
         $people      = $peopleModel->createRow();
-        
+
         $values['time_join']  = time();
+        $values['time_update']  = time();
 
         $people->assign($values);
         $people->save();
@@ -33,6 +34,7 @@ class People extends AbstractApi
 
     public function update($data, $uid)
     {
+        $data['time_update']  = time();
         Pi::model("people", 'subscription')->update($data, array('uid' => $uid));
     }
 

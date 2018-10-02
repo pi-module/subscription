@@ -82,6 +82,7 @@ class IndexController extends ActionController
                 $values['campaign'] = $campaign['id'];
                 $values['uid'] = $uid;
                 $values['status'] = 1;
+                $values['newsletter'] = 1;
                 $people = Pi::api('people', 'subscription')->createPeople($values);   
                 
                 $people = $people->toArray();

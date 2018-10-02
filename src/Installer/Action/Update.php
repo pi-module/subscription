@@ -144,6 +144,20 @@ class Update extends BasicUpdate
                 return false;
             }
         }
+
+        if (version_compare($moduleVersion, '0.4.0', '<')) {
+            $sql = sprintf("ALTER TABLE %s ADD `time_update`  INT(10) UNSIGNED NOT NULL DEFAULT '0'", $peopleTable);
+            try {
+                $peopleAdapter->query($sql, 'execute');
+            } catch (\Exception $exception) {
+                $this->setResult('db', array(
+                    'status' => false,
+                    'message' => 'Table alter query failed: '
+                        . $exception->getMessage(),
+                ));
+                return false;
+            }
+        }
         return true;
     }
 }
