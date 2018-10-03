@@ -148,7 +148,7 @@ class PeopleController extends ActionController
                         'last_name' => 'last_name',
                         'mobile' => 'mobile',
                     ), 'left')
-                    ->join(array('people' => $peopleTable), 'people.uid = user.id', array('newsletter', 'time_join'), 'left');
+                    ->join(array('people' => $peopleTable), 'people.uid = user.id', array('newsletter', 'time_join', 'time_update'), 'left');
 
 
                 $rowset = Pi::db()->query($select);
@@ -158,11 +158,12 @@ class PeopleController extends ActionController
                     $keys = array(
                         'uid',
                         'status',
-                        'email',
                         'first_name',
                         'last_name',
+                        'email',
                         'mobile',
-                        'time_join',
+                        'time_create',
+                        'time_update',
                         'newsletter'
                     );
                     Pi::service('audit')->log('subscription-export', $keys);
@@ -175,11 +176,12 @@ class PeopleController extends ActionController
                     Pi::service('audit')->log('subscription-export', array(
                         'uid'  => $user['id'],
                         'status' => $user['active'] ? __('Enabled') : __('Disabled'),
-                        'email' => $user['email'],
                         'first_name' => !empty($user['first_name']) ? $user['first_name'] : $user['name'],
                         'last_name' => !empty($user['last_name']) ? $user['last_name'] : '',
+                        'email' => $user['email'],
                         'mobile' => $user['mobile'],
                         'time_join' => $user['time_join'] ? (_date($user['time_join']) . date(' H:i', $user['time_join'])) : null,
+                        'time_update' => $user['time_update'] ? (_date($user['time_update']) . date(' H:i', $user['time_update'])) : null,
                         'newsletter' => $user['newsletter'] ? $user['newsletter'] : 0
                     ));
 
@@ -202,11 +204,12 @@ class PeopleController extends ActionController
                         $keys = array(
                             'uid',
                             'status',
-                            'email',
                             'first_name',
                             'last_name',
+                            'email',
                             'mobile',
-                            'time_join',
+                            'time_create',
+                            'time_update',
                             'newsletter'
                         );
                         Pi::service('audit')->log('subscription-export', $keys);
@@ -216,11 +219,12 @@ class PeopleController extends ActionController
                     Pi::service('audit')->log('subscription-export', array(
                         'uid'  => $people['uid'],
                         'status' => $people['status'] ? __('Enabled') : __('Disabled'),
-                        'email' => $people['email'],
                         'first_name' => $people['first_name'],
                         'last_name' => $people['last_name'],
+                        'email' => $people['email'],
                         'mobile' => $people['mobile'],
                         'time_join' => _date($people['time_join']) . date(' H:i', $people['time_join']),
+                        'time_update' => $people['time_update'] ? (_date($people['time_update']) . date(' H:i', $people['time_update'])) : null,
                         'newsletter' => $people['newsletter']
                     ));
 
