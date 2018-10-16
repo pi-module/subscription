@@ -66,6 +66,10 @@
         <div class="paginator">
             <?php echo $this->paginationControl($paginator, 'Sliding', 'paginator.phtml'); ?>
         </div>
+        <p>
+            <span class="label label-success"><?php _e('Active user'); ?></span>
+            <span class="label label-danger"><?php _e('Non confirmed user / deleted user'); ?></span>
+        </p>
     <?php } else { ?>
         <div class="alert alert-danger" role="alert">
             <?php _e('No one still join to subscription list'); ?>
