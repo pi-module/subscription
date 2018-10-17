@@ -162,7 +162,7 @@ class PeopleController extends ActionController
                         'last_name',
                         'email',
                         'mobile',
-                        'time_create',
+                        'time_join',
                         'time_update',
                         'newsletter'
                     );
@@ -208,7 +208,7 @@ class PeopleController extends ActionController
                             'last_name',
                             'email',
                             'mobile',
-                            'time_create',
+                            'time_join',
                             'time_update',
                             'newsletter'
                         );
