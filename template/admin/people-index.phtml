@@ -46,10 +46,10 @@
                                 <div class="modal-dialog" role="document">
                                     <div class="modal-content">
                                         <div class="modal-header">
+                                            <h4 class="modal-title" id="peopleUserLabel<?php echo $this->escape($people['id']); ?>"><?php _e('User information'); ?></h4>
                                             <button type="button" class="close" data-dismiss="modal" aria-label="<?php _e('Close'); ?>">
                                                 <span aria-hidden="true">&times;</span>
                                             </button>
-                                            <h4 class="modal-title" id="peopleUserLabel<?php echo $this->escape($people['id']); ?>"><?php _e('User information'); ?></h4>
                                         </div>
                                         <div class="modal-body">
                                             <pre><?php print_r($people['user']); ?></pre>
