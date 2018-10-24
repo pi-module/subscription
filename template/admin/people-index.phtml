@@ -67,8 +67,8 @@
             <?php echo $this->paginationControl($paginator, 'Sliding', 'paginator.phtml'); ?>
         </div>
         <p>
-            <span class="label label-success"><?php _e('Active user'); ?></span>
-            <span class="label label-danger"><?php _e('Non confirmed user / deleted user'); ?></span>
+            <span class="badge badge-success"><?php _e('Active user'); ?></span>
+            <span class="badge badge-danger"><?php _e('Non confirmed user / deleted user'); ?></span>
         </p>
     <?php } else { ?>
         <div class="alert alert-danger" role="alert">
