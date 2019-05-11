@@ -22,21 +22,22 @@ class People extends AbstractApi
     {
         $peopleModel = Pi::model('people', 'subscription');
         $people      = $peopleModel->createRow();
-        
+
         $values['time_join']  = time();
-        $values['newsletter'] = 1;
-        
+        $values['time_update']  = time();
+
         $people->assign($values);
         $people->save();
         
         return $people;
     }
-    
-    public function activate($uid)
+
+    public function update($data, $uid)
     {
-        Pi::model("people", 'subscription')->update(array('status' => 1), array('uid' => $uid));
+        $data['time_update']  = time();
+        Pi::model("people", 'subscription')->update($data, array('uid' => $uid));
     }
-    
+
     public function getCurrentPeople()
     {
         $select      = Pi::model('people', 'subscription')->select();

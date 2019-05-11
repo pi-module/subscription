@@ -46,6 +46,14 @@ return array(
             'value' => 25
         ),
         // Subscription
+        'subscription_enabled' => array(
+            'category' => 'subscription',
+            'title' => _a('Enabled ?'),
+            'description' => '',
+            'edit' => 'checkbox',
+            'filter' => 'number_int',
+            'value' => 1
+        ),
         'subscription_name' => array(
             'category' => 'subscription',
             'title' => _a('Show name on subscription'),

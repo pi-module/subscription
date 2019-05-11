@@ -2,15 +2,20 @@
 <div class="clearfix">
     <?php if (!empty($list)) { ?>
         <h3><?php _e('List of peoples'); ?></h3>
+        <p>
+            <?php _e("Users who subscribed to newsletter, with their current status.") ?>
+        </p>
         <table class="table table-striped table-bordered table-sm">
             <tr>
-                <th><?php _e('ID'); ?></th>
-                <th><?php _e('First name'); ?></th>
-                <th><?php _e('Last name'); ?></th>
-                <th><?php _e('Email'); ?></th>
-                <th><?php _e('Mobile'); ?></th>
-                <th><?php _e('Subscription date') ?></th>
-                <th><?php _e('Is user?'); ?></th>
+                <th class="text-center"><?php _e('ID'); ?></th>
+                <th class="text-center"><?php _e('First name'); ?></th>
+                <th class="text-center"><?php _e('Last name'); ?></th>
+                <th class="text-center"><?php _e('Email'); ?></th>
+                <th class="text-center"><?php _e('Mobile'); ?></th>
+                <th class="text-center"><?php _e('Time join') ?></th>
+                <th class="text-center"><?php _e('Update date') ?></th>
+                <th class="text-center"><?php _e('Newsletter?'); ?></th>
+                <th class="text-center"><?php _e('Is PI user?'); ?></th>
             </tr>
             <?php foreach ($list as $people) { ?>
                 <?php
@@ -21,14 +26,16 @@
                 } 
                 ?>
                 <tr>
-                    <td><span
+                    <td class="text-center"><span
                                 class="label <?php echo $labelIdClass; ?>"><?php echo $this->escape($people['id']); ?></span>
                     </td>
-                    <td><?php echo $this->escape(isset($people['user']['first_name']) ? $people['user']['first_name'] : $people['first_name']); ?></td>
-                    <td><?php echo $this->escape(isset($people['user']['last_name']) ? $people['user']['last_name'] : $people['last_name']); ?></td>
-                    <td><?php echo $this->escape(isset($people['user']['email']) ? $people['user']['email'] : $people['email']); ?></td>
-                    <td><?php echo $this->escape(isset($people['user']['mobile']) ? $people['user']['mobile'] : $people['mobile']); ?></td>
-                    <td><?php echo _date($people['time_join']) . ' ' . date('H:i', $people['time_join']) ?></td>
+                    <td class="text-center"><?php echo $this->escape(isset($people['user']['first_name']) ? $people['user']['first_name'] : $people['first_name']); ?></td>
+                    <td class="text-center"><?php echo $this->escape(isset($people['user']['last_name']) ? $people['user']['last_name'] : $people['last_name']); ?></td>
+                    <td class="text-center"><?php echo $this->escape(isset($people['user']['email']) ? $people['user']['email'] : $people['email']); ?></td>
+                    <td class="text-center"><?php echo $this->escape(isset($people['user']['mobile']) ? $people['user']['mobile'] : $people['mobile']); ?></td>
+                    <td class="text-center"><?php echo _date($people['time_join']) . ' ' . date('H:i', $people['time_join']) ?></td>
+                    <td class="text-center"><?php echo _date($people['time_update']) . ' ' . date('H:i', $people['time_update']) ?></td>
+                    <td class="text-center"><span class="fa <?php echo $people['newsletter'] ? 'fa-check text-success' : 'fa-close text-danger' ?>"></span></td>
                     <td class="text-center"><?php if ($people['isUser'] && !empty($people['user']['name'])) { ?>
                             <!-- Button trigger modal -->
                             <button type="button" class="btn btn-link btn-sm" data-toggle="modal" data-target="#peopleUser<?php echo $this->escape($people['id']); ?>">
@@ -39,10 +46,10 @@
                                 <div class="modal-dialog" role="document">
                                     <div class="modal-content">
                                         <div class="modal-header">
+                                            <h4 class="modal-title" id="peopleUserLabel<?php echo $this->escape($people['id']); ?>"><?php _e('User information'); ?></h4>
                                             <button type="button" class="close" data-dismiss="modal" aria-label="<?php _e('Close'); ?>">
                                                 <span aria-hidden="true">&times;</span>
                                             </button>
-                                            <h4 class="modal-title" id="peopleUserLabel<?php echo $this->escape($people['id']); ?>"><?php _e('User information'); ?></h4>
                                         </div>
                                         <div class="modal-body">
                                             <pre><?php print_r($people['user']); ?></pre>
@@ -59,6 +66,10 @@
         <div class="paginator">
             <?php echo $this->paginationControl($paginator, 'Sliding', 'paginator.phtml'); ?>
         </div>
+        <p>
+            <span class="badge badge-success"><?php _e('Active user'); ?></span>
+            <span class="badge badge-danger"><?php _e('Non confirmed user / deleted user'); ?></span>
+        </p>
     <?php } else { ?>
         <div class="alert alert-danger" role="alert">
             <?php _e('No one still join to subscription list'); ?>

@@ -25,6 +25,7 @@ class People extends Model
         'uid',
         'status',
         'time_join',
+        'time_update',
         'first_name',
         'last_name',
         'email',
