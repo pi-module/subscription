@@ -13,9 +13,9 @@
 namespace Module\Subscription\Form\Element;
 
 use Pi;
-use Zend\Form\Element\Image as ZendImage;
+use Laminas\Form\Element\Image as LaminasImage;
 
-class Image extends ZendImage
+class Image extends LaminasImage
 {
     /**
      * @return array

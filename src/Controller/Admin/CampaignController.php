@@ -19,7 +19,7 @@ use Pi\Paginator\Paginator;
 use Pi\File\Transfer\Upload;
 use Module\Subscription\Form\CampaignForm;
 use Module\Subscription\Form\CampaignFilter;
-use Zend\Db\Sql\Predicate\Expression;
+use Laminas\Db\Sql\Predicate\Expression;
 
 class CampaignController extends ActionController
 {

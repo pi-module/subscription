@@ -13,7 +13,7 @@
 namespace Module\Subscription\Form;
 
 use Pi;
-use Zend\InputFilter\InputFilter;
+use Laminas\InputFilter\InputFilter;
 
 class ExportFilter extends InputFilter
 {
