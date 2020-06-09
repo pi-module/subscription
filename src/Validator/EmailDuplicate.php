@@ -13,7 +13,7 @@
 namespace Module\Subscription\Validator;
 
 use Pi;
-use Zend\Validator\EmailAddress;
+use Laminas\Validator\EmailAddress;
 
 class EmailDuplicate extends EmailAddress
 {
